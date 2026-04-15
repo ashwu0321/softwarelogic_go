@@ -6,13 +6,15 @@ theorem legalPlaceBasic_implies_inBounds {st : GameState} {p : Pos}
     (h : legalPlaceBasic st p = true) :
     inBounds st.size p = true := by
   unfold legalPlaceBasic at h
-  exact (Bool.and_eq_true.mp h).left
+  simp at h
+  exact h.left
 
 theorem legalPlaceBasic_implies_empty {st : GameState} {p : Pos}
     (h : legalPlaceBasic st p = true) :
     isEmptyAt st.board p = true := by
   unfold legalPlaceBasic at h
-  exact (Bool.and_eq_true.mp h).right
+  simp at h
+  exact h.right
 
 theorem legalMove_place_implies_basic {st : GameState} {p : Pos}
     (h : legalMove st (.place p) = true) :
@@ -21,7 +23,7 @@ theorem legalMove_place_implies_basic {st : GameState} {p : Pos}
   | false =>
       simp [legalMove, legalPlaceNoSuicide, hbasic] at h
   | true =>
-      exact hbasic
+      rfl
 
 theorem legalMove_place_implies_inBounds {st : GameState} {p : Pos}
     (h : legalMove st (.place p) = true) :
@@ -45,7 +47,81 @@ theorem applyMove_place_requires_legal {st st' : GameState} {p : Pos}
   | false =>
       simp [hleg] at h
   | true =>
-      exact hleg
+      rfl
+
+theorem placeStone_preserves_size {st : GameState} {p : Pos} {mid : GameState}
+    (h : placeStone? st p = some mid) :
+    mid.size = st.size := by
+  unfold placeStone? at h
+  cases hbound : inBounds st.size p with
+  | false =>
+      simp [hbound] at h
+  | true =>
+      cases hempty : isEmptyAt st.board p with
+      | false =>
+          simp [hbound, hempty] at h
+      | true =>
+          cases hnew : boardSet? st.board p (some st.turn) with
+          | none =>
+              simp [hbound, hempty, hnew] at h
+          | some newBoard =>
+              simp [hbound, hempty, hnew] at h
+              cases h
+              rfl
+
+theorem placeStone_preserves_turn {st : GameState} {p : Pos} {mid : GameState}
+    (h : placeStone? st p = some mid) :
+    mid.turn = st.turn := by
+  unfold placeStone? at h
+  cases hbound : inBounds st.size p with
+  | false =>
+      simp [hbound] at h
+  | true =>
+      cases hempty : isEmptyAt st.board p with
+      | false =>
+          simp [hbound, hempty] at h
+      | true =>
+          cases hnew : boardSet? st.board p (some st.turn) with
+          | none =>
+              simp [hbound, hempty, hnew] at h
+          | some newBoard =>
+              simp [hbound, hempty, hnew] at h
+              cases h
+              rfl
+
+theorem captureAround_preserves_size {st : GameState} {p : Pos} :
+    (captureAround st p).size = st.size := by
+  unfold captureAround
+  simp
+
+theorem captureAround_preserves_turn {st : GameState} {p : Pos} :
+    (captureAround st p).turn = st.turn := by
+  unfold captureAround
+  simp
+
+theorem resolvePlacement_preserves_size {st : GameState} {p : Pos} {mid : GameState}
+    (hres : resolvePlacement? st p = some mid) :
+    mid.size = st.size := by
+  unfold resolvePlacement? at hres
+  cases hplace : placeStone? st p with
+  | none =>
+      simp [hplace] at hres
+  | some placed =>
+      simp [hplace] at hres
+      cases hres
+      simp [captureAround_preserves_size, placeStone_preserves_size hplace]
+
+theorem resolvePlacement_preserves_turn {st : GameState} {p : Pos} {mid : GameState}
+    (hres : resolvePlacement? st p = some mid) :
+    mid.turn = st.turn := by
+  unfold resolvePlacement? at hres
+  cases hplace : placeStone? st p with
+  | none =>
+      simp [hplace] at hres
+  | some placed =>
+      simp [hplace] at hres
+      cases hres
+      simp [captureAround_preserves_turn, placeStone_preserves_turn hplace]
 
 theorem applyMove_place_preserves_size {st st' : GameState} {p : Pos}
     (h : applyMove? st (.place p) = some st') :
@@ -60,7 +136,8 @@ theorem applyMove_place_preserves_size {st st' : GameState} {p : Pos}
   | some mid =>
       simp [hres] at h
       cases h
-      rfl
+      unfold switchTurn
+      simp [resolvePlacement_preserves_size hres]
 
 theorem applyMove_place_switches_turn {st st' : GameState} {p : Pos}
     (h : applyMove? st (.place p) = some st') :
@@ -75,6 +152,7 @@ theorem applyMove_place_switches_turn {st st' : GameState} {p : Pos}
   | some mid =>
       simp [hres] at h
       cases h
-      rfl
+      unfold switchTurn
+      simp [resolvePlacement_preserves_turn hres]
 
 end Go

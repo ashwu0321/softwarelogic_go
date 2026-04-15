@@ -1,0 +1,11 @@
+{"plugins": [],
+ "package": "SoftwareLogic_Go",
+ "options": {},
+ "name": "Go.Group",
+ "isModule": false,
+ "importArts":
+ {"Go.Board":
+  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Board.olean"],
+  "Go.Basic":
+  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Basic.olean"]},
+ "dynlibs": []}

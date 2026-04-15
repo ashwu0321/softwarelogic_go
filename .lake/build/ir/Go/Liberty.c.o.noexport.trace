@@ -1,0 +1,18 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs": "1492f951ee116a76.o",
+ "log":
+ [{"message":
+   ".> c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\clang.exe -c -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Liberty.c.o.noexport C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Liberty.c -I c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\include -fstack-clash-protection -fdata-sections -ffunction-sections -Wno-unused-command-line-argument --sysroot c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1 -nostdinc -isystem c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1/include/clang -O3 -DNDEBUG",
+   "level": "trace"}],
+ "inputs":
+ [["Go.Liberty:c",
+   [["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Liberty.c",
+     "faac46b4b05b92c9"],
+    ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
+     "fa77a35a41db35c0"]]],
+  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
+   "fa77a35a41db35c0"],
+  ["traceArgs: #[-O3, -DNDEBUG]", "6c7bb0eeabd8f74a"],
+  ["x86_64-w64-windows-gnu", "360db333d006d911"]],
+ "depHash": "152575a04084b595"}

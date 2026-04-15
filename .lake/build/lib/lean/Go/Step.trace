@@ -1,0 +1,33 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["8f1264cd8768b220.olean"],
+  "i": "8cd4a298ed0552db.ilean",
+  "c": "cab042ce4c249d57.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Step.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Step.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Step.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Step.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Step.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["Go.Step:deps",
+   [["deps",
+     [["SoftwareLogic_Go/Go:extraDep",
+       [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["Go.Move transitive imports (legacy)", "769a53a908c093de"],
+        ["Go.Move:importAllArts", "c0a56f1ab65eb055"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
+   "fa77a35a41db35c0"],
+  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Step.lean",
+   "15701555b6dd68d6"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Go.Step", "1a8f10e2a914f1e4"],
+  ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "ad4115b0ef8cd2d3"}

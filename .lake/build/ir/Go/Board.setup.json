@@ -1,0 +1,9 @@
+{"plugins": [],
+ "package": "SoftwareLogic_Go",
+ "options": {},
+ "name": "Go.Board",
+ "isModule": false,
+ "importArts":
+ {"Go.Basic":
+  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Basic.olean"]},
+ "dynlibs": []}

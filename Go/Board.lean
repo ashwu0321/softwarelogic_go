@@ -1,4 +1,4 @@
-import Go/Basic.lean
+import Go.Basic
 
 namespace Go
 
@@ -6,7 +6,7 @@ def inBounds (size : Nat) (p : Pos) : Bool :=
   p.1 < size && p.2 < size
 
 def getAt? (xs : List α) (i : Nat) : Option α :=
-  xs.get? i
+  if h : i < xs.length then some (xs.get ⟨i, h⟩) else none
 
 def setAt? (xs : List α) (i : Nat) (val : α) : Option (List α) :=
   match xs, i with
@@ -18,11 +18,11 @@ def setAt? (xs : List α) (i : Nat) (val : α) : Option (List α) :=
       | none => none
 
 def boardGet? (b : Board) (p : Pos) : Option (Option Stone) := do
-  let row ← b.get? p.1
-  row.get? p.2
+  let row ← getAt? b p.1
+  getAt? row p.2
 
 def boardSet? (b : Board) (p : Pos) (val : Option Stone) : Option Board := do
-  let row ← b.get? p.1
+  let row ← getAt? b p.1
   let newRow ← setAt? row p.2 val
   setAt? b p.1 newRow
 

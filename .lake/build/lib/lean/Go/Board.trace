@@ -1,0 +1,33 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["3e86728886bd09fc.olean"],
+  "i": "5699eff1b1849550.ilean",
+  "c": "d32bf142ddd4178a.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Board.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Board.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Board.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Board.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Board.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["Go.Board:deps",
+   [["deps",
+     [["SoftwareLogic_Go/Go:extraDep",
+       [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["Go.Basic transitive imports (legacy)", "00000000000006bb"],
+        ["Go.Basic:importAllArts", "5dfa55cd3f269ca6"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
+   "fa77a35a41db35c0"],
+  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Board.lean",
+   "643af9d2334ccb3f"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Go.Board", "50564fc28bbd7c77"],
+  ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "5dc256bf4ec10924"}

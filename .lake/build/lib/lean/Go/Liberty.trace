@@ -1,0 +1,33 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs":
+ {"o": ["d72c217ff9fc56a9.olean"],
+  "i": "e58c4405c8b37dd4.ilean",
+  "c": "faac46b4b05b92c9.c"},
+ "log":
+ [{"message":
+   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Liberty.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Liberty.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Liberty.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Liberty.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Liberty.setup.json --json",
+   "level": "trace"}],
+ "inputs":
+ [["Go.Liberty:deps",
+   [["deps",
+     [["SoftwareLogic_Go/Go:extraDep",
+       [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
+      ["imports",
+       [["Go.Group transitive imports (legacy)", "c470e038d82dcec4"],
+        ["Go.Group:importAllArts", "81ecc28305690d26"]]]]],
+    ["libs",
+     [["import dynlibs", "00000000000006bb"],
+      ["package external libraries", "00000000000006bb"],
+      ["module dynlibs", "00000000000006bb"],
+      ["module plugins", "00000000000006bb"]]]]],
+  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
+   "fa77a35a41db35c0"],
+  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Liberty.lean",
+   "3b8369f37641eeb2"],
+  ["options", "00000000000006bb"],
+  ["isModule: false", "feefd2a0d3a1847e"],
+  ["Module.name: Go.Liberty", "222e6ec6c0818610"],
+  ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
+  ["Module.leanArgs: #[]", "00000000000006bb"]],
+ "depHash": "790e6c7451f115da"}

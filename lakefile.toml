@@ -1,0 +1,10 @@
+name = "SoftwareLogic_Go"
+version = "0.1.0"
+defaultTargets = ["SoftwareLogic_Go"]
+
+[[lean_lib]]
+name = "Go"
+
+[[lean_exe]]
+name = "SoftwareLogic_Go"
+root = "Main"
