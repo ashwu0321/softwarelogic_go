@@ -136,6 +136,10 @@ theorem pass_from_initial_is_switch_turn :
     applyMove? st0 .pass = some (switchTurn st0) := by
   exact applyMove_pass_eq_switchTurn st0
 
+theorem pass_from_initial_is_legal :
+    legalMove st0 .pass = true := by
+  exact legalMove_pass st0
+
 theorem demo_sequence_preserves_size {st' : GameState}
     (h : applyCheckedMoves? st0 demoMoves = some st') :
     st'.size = st0.size := by
@@ -147,6 +151,47 @@ theorem capture_sequence_preserves_size {st' : GameState}
     st'.size = st0.size := by
   rw [applyCheckedMoves_eq_applyMoves?] at h
   exact applyMoves_preserves_size h
+
+def suicideState : GameState :=
+  { size := 3
+  , board :=
+      [ [none, some Stone.white, none]
+      , [some Stone.white, none, some Stone.white]
+      , [none, some Stone.white, none]
+      ]
+  , turn := Stone.black
+  }
+
+def suicideMove : Move :=
+  .place (1, 1)
+
+theorem suicide_move_is_illegal :
+    legalMove suicideState suicideMove = false := by
+  native_decide
+
+theorem checked_suicide_move_rejected :
+    applyCheckedMove? suicideState suicideMove = none := by
+  exact applyCheckedMove_rejects_illegal suicide_move_is_illegal
+
+theorem raw_suicide_move_rejected :
+    applyMove? suicideState suicideMove = none := by
+  exact applyMove_place_rejects_illegal suicide_move_is_illegal
+
+theorem capture_demo_removes_surrounded_stone :
+    (match applyCheckedMoves? st0 captureDemoMoves with
+    | none => false
+    | some st => stoneAt? st.board (1, 1) == none) = true := by
+  native_decide
+
+theorem capture_demo_keeps_surrounding_white_stones :
+    (match applyCheckedMoves? st0 captureDemoMoves with
+    | none => false
+    | some st =>
+        stoneAt? st.board (0, 1) == some Stone.white &&
+        stoneAt? st.board (1, 0) == some Stone.white &&
+        stoneAt? st.board (2, 1) == some Stone.white &&
+        stoneAt? st.board (1, 2) == some Stone.white) = true := by
+  native_decide
 
 def proofCertificates : List String :=
   [ "center_move_is_legal uses legalMove on a concrete move"
@@ -162,6 +207,11 @@ def proofCertificates : List String :=
   , "applied_center_preserves_size follows from applyMove_place_preserves_size"
   , "applied_center_switches_turn follows from applyMove_place_switches_turn"
   , "pass_from_initial_is_switch_turn follows from applyMove_pass_eq_switchTurn"
+  , "pass_from_initial_is_legal follows from legalMove_pass"
+  , "checked_suicide_move_rejected proves the checked API rejects a concrete suicide move"
+  , "raw_suicide_move_rejected proves the raw executor rejects that illegal placement"
+  , "capture_demo_removes_surrounded_stone checks the captured point is empty afterward"
+  , "capture_demo_keeps_surrounding_white_stones checks the surrounding stones remain"
   ]
 
 def showProofCertificates : IO Unit := do
@@ -237,6 +287,24 @@ def main : IO Unit := do
   IO.println ""
 
   showSequence "Capture scenario (white surrounds and captures black):" st0 captureMoves
+
+  IO.println "Direct capture checks:"
+  match captureState? with
+  | none =>
+      IO.println "capture sequence failed"
+  | some st =>
+      IO.println s!"captured point (1,1) = {reprStr (stoneAt? st.board (1, 1))}"
+      IO.println s!"white surrounders = {reprStr [
+        stoneAt? st.board (0, 1),
+        stoneAt? st.board (1, 0),
+        stoneAt? st.board (2, 1),
+        stoneAt? st.board (1, 2)
+      ]}"
+  IO.println ""
+
+  showState "Concrete suicide-prevention state:" suicideState
+  showLegality "Black suicide at surrounded center (.place (1,1))" suicideState suicideMove
+  showResult "Attempting the suicide move through checked execution:" (applyCheckedMove? suicideState suicideMove)
 
   IO.println "Legality checks from an intermediate state:"
   match oneMove? with

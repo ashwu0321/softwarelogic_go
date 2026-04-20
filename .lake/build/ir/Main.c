@@ -29,6 +29,9 @@ lean_object* lp_SoftwareLogic__Go_Go_applyMove_x3f(lean_object*, lean_object*);
 lean_object* lp_SoftwareLogic__Go_Go_checkMove_x3f(lean_object*, lean_object*);
 uint8_t lp_SoftwareLogic__Go_Go_legalMove(lean_object*, lean_object*);
 extern lean_object* lp_SoftwareLogic__Go_Go_captureDemoMoves;
+lean_object* lp_SoftwareLogic__Go_Go_stoneAt_x3f(lean_object*, lean_object*);
+lean_object* lp_SoftwareLogic__Go_Option_repr___at___00List_repr___at___00List_repr___at___00Go_instReprGameState_repr_spec__0_spec__0_spec__1(lean_object*, lean_object*);
+lean_object* lp_SoftwareLogic__Go_List_repr___at___00List_repr___at___00Go_instReprGameState_repr_spec__0_spec__0___redArg(lean_object*);
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_IO_print___at___00IO_println___at___00showState_spec__0_spec__0(lean_object*);
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_IO_print___at___00IO_println___at___00showState_spec__0_spec__0___boxed(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(lean_object*);
@@ -152,6 +155,30 @@ static const lean_object* lp_SoftwareLogic__Go_demoMoves___closed__17 = (const l
 static const lean_ctor_object lp_SoftwareLogic__Go_demoMoves___closed__18_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_centerMove___closed__1_value),((lean_object*)&lp_SoftwareLogic__Go_demoMoves___closed__17_value)}};
 static const lean_object* lp_SoftwareLogic__Go_demoMoves___closed__18 = (const lean_object*)&lp_SoftwareLogic__Go_demoMoves___closed__18_value;
 LEAN_EXPORT const lean_object* lp_SoftwareLogic__Go_demoMoves = (const lean_object*)&lp_SoftwareLogic__Go_demoMoves___closed__18_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(1) << 1) | 1))}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__0 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__0_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__1 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__1_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__2_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__0_value),((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__1_value)}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__2 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__2_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__3_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__2_value)}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__3 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__3_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__4_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__0_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__4 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__4_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__5_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)(((size_t)(0) << 1) | 1)),((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__4_value)}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__5 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__5_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__6_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__0_value),((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__5_value)}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__6 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__6_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__7_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__3_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__7 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__7_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__8_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__6_value),((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__7_value)}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__8 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__8_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__9_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__3_value),((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__8_value)}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__9 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__9_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_suicideState___closed__10_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 8, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(3) << 1) | 1)),((lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__9_value),LEAN_SCALAR_PTR_LITERAL(0, 0, 0, 0, 0, 0, 0, 0)}};
+static const lean_object* lp_SoftwareLogic__Go_suicideState___closed__10 = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__10_value;
+LEAN_EXPORT const lean_object* lp_SoftwareLogic__Go_suicideState = (const lean_object*)&lp_SoftwareLogic__Go_suicideState___closed__10_value;
+LEAN_EXPORT const lean_object* lp_SoftwareLogic__Go_suicideMove = (const lean_object*)&lp_SoftwareLogic__Go_demoMoves___closed__5_value;
 static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 55, .m_capacity = 55, .m_length = 54, .m_data = "center_move_is_legal uses legalMove on a concrete move"};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__0 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__0_value;
 static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 90, .m_capacity = 90, .m_length = 89, .m_data = "checked_center_move_exists constructs a LegalMove proof object from a runtime-style check"};
@@ -178,33 +205,53 @@ static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed_
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__11 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__11_value;
 static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed__12_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 75, .m_capacity = 75, .m_length = 74, .m_data = "pass_from_initial_is_switch_turn follows from applyMove_pass_eq_switchTurn"};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__12 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__12_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__13_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__12_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
+static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed__13_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 55, .m_capacity = 55, .m_length = 54, .m_data = "pass_from_initial_is_legal follows from legalMove_pass"};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__13 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__13_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__14_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__11_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__13_value)}};
+static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed__14_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 85, .m_capacity = 85, .m_length = 84, .m_data = "checked_suicide_move_rejected proves the checked API rejects a concrete suicide move"};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__14 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__14_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__15_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__10_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__14_value)}};
+static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed__15_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 81, .m_capacity = 81, .m_length = 80, .m_data = "raw_suicide_move_rejected proves the raw executor rejects that illegal placement"};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__15 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__15_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__16_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__9_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__15_value)}};
+static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed__16_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 83, .m_capacity = 83, .m_length = 82, .m_data = "capture_demo_removes_surrounded_stone checks the captured point is empty afterward"};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__16 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__16_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__17_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__8_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__16_value)}};
+static const lean_string_object lp_SoftwareLogic__Go_proofCertificates___closed__17_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 81, .m_capacity = 81, .m_length = 80, .m_data = "capture_demo_keeps_surrounding_white_stones checks the surrounding stones remain"};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__17 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__17_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__18_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__7_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__17_value)}};
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__18_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__17_value),((lean_object*)(((size_t)(0) << 1) | 1))}};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__18 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__18_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__19_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__6_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__18_value)}};
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__19_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__16_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__18_value)}};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__19 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__19_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__20_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__5_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__19_value)}};
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__20_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__15_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__19_value)}};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__20 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__20_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__21_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__4_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__20_value)}};
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__21_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__14_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__20_value)}};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__21 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__21_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__22_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__3_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__21_value)}};
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__22_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__13_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__21_value)}};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__22 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__22_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__23_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__2_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__22_value)}};
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__23_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__12_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__22_value)}};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__23 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__23_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__24_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__1_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__23_value)}};
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__24_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__11_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__23_value)}};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__24 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__24_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__25_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__0_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__24_value)}};
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__25_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__10_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__24_value)}};
 static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__25 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__25_value;
-LEAN_EXPORT const lean_object* lp_SoftwareLogic__Go_proofCertificates = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__25_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__26_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__9_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__25_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__26 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__26_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__27_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__8_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__26_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__27 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__27_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__28_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__7_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__27_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__28 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__28_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__29_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__6_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__28_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__29 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__29_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__30_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__5_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__29_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__30 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__30_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__31_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__4_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__30_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__31 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__31_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__32_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__3_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__31_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__32 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__32_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__33_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__2_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__32_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__33 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__33_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__34_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__1_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__33_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__34 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__34_value;
+static const lean_ctor_object lp_SoftwareLogic__Go_proofCertificates___closed__35_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 1}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__0_value),((lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__34_value)}};
+static const lean_object* lp_SoftwareLogic__Go_proofCertificates___closed__35 = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__35_value;
+LEAN_EXPORT const lean_object* lp_SoftwareLogic__Go_proofCertificates = (const lean_object*)&lp_SoftwareLogic__Go_proofCertificates___closed__35_value;
 static const lean_string_object lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 3, .m_capacity = 3, .m_length = 2, .m_data = "- "};
 static const lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg___closed__0 = (const lean_object*)&lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg___closed__0_value;
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(lean_object*, lean_object*);
@@ -292,34 +339,50 @@ static const lean_string_object lp_SoftwareLogic__Go_main___closed__16_value = {
 static const lean_object* lp_SoftwareLogic__Go_main___closed__16 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__16_value;
 static const lean_string_object lp_SoftwareLogic__Go_main___closed__17_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 34, .m_capacity = 34, .m_length = 33, .m_data = "Single legal placement at center:"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__17 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__17_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__18_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 55, .m_capacity = 55, .m_length = 54, .m_data = "Capture scenario (white surrounds and captures black):"};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__18_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 35, .m_capacity = 35, .m_length = 34, .m_data = "Concrete suicide-prevention state:"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__18 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__18_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__19_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 44, .m_capacity = 44, .m_length = 43, .m_data = "Legality checks from an intermediate state:"};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__19_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 50, .m_capacity = 50, .m_length = 49, .m_data = "Black suicide at surrounded center (.place (1,1))"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__19 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__19_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__20_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 36, .m_capacity = 36, .m_length = 35, .m_data = "could not create intermediate state"};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__20_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 55, .m_capacity = 55, .m_length = 54, .m_data = "Attempting the suicide move through checked execution:"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__20 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__20_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__21_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 32, .m_capacity = 32, .m_length = 31, .m_data = "State after Black plays center:"};
-static const lean_object* lp_SoftwareLogic__Go_main___closed__21 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__21_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__22_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 54, .m_capacity = 54, .m_length = 53, .m_data = "Trying to replay on occupied center (should be false)"};
+static lean_once_cell_t lp_SoftwareLogic__Go_main___closed__21_once = LEAN_ONCE_CELL_INITIALIZER;
+static lean_object* lp_SoftwareLogic__Go_main___closed__21;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__22_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 44, .m_capacity = 44, .m_length = 43, .m_data = "Legality checks from an intermediate state:"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__22 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__22_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__23_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 42, .m_capacity = 42, .m_length = 41, .m_data = "Playing a different empty in-bounds point"};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__23_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 36, .m_capacity = 36, .m_length = 35, .m_data = "could not create intermediate state"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__23 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__23_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__24_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 43, .m_capacity = 43, .m_length = 42, .m_data = "Out-of-bounds move from intermediate state"};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__24_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 32, .m_capacity = 32, .m_length = 31, .m_data = "State after Black plays center:"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__24 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__24_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_main___closed__25_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(7) << 1) | 1)),((lean_object*)(((size_t)(7) << 1) | 1))}};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__25_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 54, .m_capacity = 54, .m_length = 53, .m_data = "Trying to replay on occupied center (should be false)"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__25 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__25_value;
-static const lean_ctor_object lp_SoftwareLogic__Go_main___closed__26_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_main___closed__25_value)}};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__26_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 42, .m_capacity = 42, .m_length = 41, .m_data = "Playing a different empty in-bounds point"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__26 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__26_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__27_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 53, .m_capacity = 53, .m_length = 52, .m_data = "Attempt to place on an occupied point (should fail):"};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__27_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 43, .m_capacity = 43, .m_length = 42, .m_data = "Out-of-bounds move from intermediate state"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__27 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__27_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__28_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 30, .m_capacity = 30, .m_length = 29, .m_data = "Pass move from initial state:"};
+static const lean_ctor_object lp_SoftwareLogic__Go_main___closed__28_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*2 + 0, .m_other = 2, .m_tag = 0}, .m_objs = {((lean_object*)(((size_t)(7) << 1) | 1)),((lean_object*)(((size_t)(7) << 1) | 1))}};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__28 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__28_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__29_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 32, .m_capacity = 32, .m_length = 31, .m_data = "Demo sequence from the project:"};
+static const lean_ctor_object lp_SoftwareLogic__Go_main___closed__29_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_ctor_object) + sizeof(void*)*1 + 0, .m_other = 1, .m_tag = 0}, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_main___closed__28_value)}};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__29 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__29_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__30_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 40, .m_capacity = 40, .m_length = 39, .m_data = "Checking the final demo board directly:"};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__30_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 55, .m_capacity = 55, .m_length = 54, .m_data = "Capture scenario (white surrounds and captures black):"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__30 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__30_value;
-static const lean_string_object lp_SoftwareLogic__Go_main___closed__31_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 22, .m_capacity = 22, .m_length = 21, .m_data = "illegal move sequence"};
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__31_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 23, .m_capacity = 23, .m_length = 22, .m_data = "Direct capture checks:"};
 static const lean_object* lp_SoftwareLogic__Go_main___closed__31 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__31_value;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__32_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 24, .m_capacity = 24, .m_length = 23, .m_data = "capture sequence failed"};
+static const lean_object* lp_SoftwareLogic__Go_main___closed__32 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__32_value;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__33_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 24, .m_capacity = 24, .m_length = 23, .m_data = "captured point (1,1) = "};
+static const lean_object* lp_SoftwareLogic__Go_main___closed__33 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__33_value;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__34_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 21, .m_capacity = 21, .m_length = 20, .m_data = "white surrounders = "};
+static const lean_object* lp_SoftwareLogic__Go_main___closed__34 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__34_value;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__35_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 53, .m_capacity = 53, .m_length = 52, .m_data = "Attempt to place on an occupied point (should fail):"};
+static const lean_object* lp_SoftwareLogic__Go_main___closed__35 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__35_value;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__36_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 30, .m_capacity = 30, .m_length = 29, .m_data = "Pass move from initial state:"};
+static const lean_object* lp_SoftwareLogic__Go_main___closed__36 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__36_value;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__37_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 32, .m_capacity = 32, .m_length = 31, .m_data = "Demo sequence from the project:"};
+static const lean_object* lp_SoftwareLogic__Go_main___closed__37 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__37_value;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__38_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 40, .m_capacity = 40, .m_length = 39, .m_data = "Checking the final demo board directly:"};
+static const lean_object* lp_SoftwareLogic__Go_main___closed__38 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__38_value;
+static const lean_string_object lp_SoftwareLogic__Go_main___closed__39_value = {.m_header = {.m_rc = 0, .m_cs_sz = 0, .m_other = 0, .m_tag = 249}, .m_size = 22, .m_capacity = 22, .m_length = 21, .m_data = "illegal move sequence"};
+static const lean_object* lp_SoftwareLogic__Go_main___closed__39 = (const lean_object*)&lp_SoftwareLogic__Go_main___closed__39_value;
 LEAN_EXPORT lean_object* _lean_main();
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_main___boxed(lean_object*);
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_IO_print___at___00IO_println___at___00showState_spec__0_spec__0(lean_object* v_s_1_){
@@ -1189,312 +1252,759 @@ return v_val_291_;
 }
 }
 }
-LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(lean_object* v_as_x27_397_, lean_object* v_b_398_){
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(lean_object* v_as_x27_453_, lean_object* v_b_454_){
 _start:
 {
-if (lean_obj_tag(v_as_x27_397_) == 0)
+if (lean_obj_tag(v_as_x27_453_) == 0)
 {
-lean_object* v___x_400_; 
-v___x_400_ = lean_alloc_ctor(0, 1, 0);
-lean_ctor_set(v___x_400_, 0, v_b_398_);
-return v___x_400_;
+lean_object* v___x_456_; 
+v___x_456_ = lean_alloc_ctor(0, 1, 0);
+lean_ctor_set(v___x_456_, 0, v_b_454_);
+return v___x_456_;
 }
 else
 {
-lean_object* v_head_401_; lean_object* v_tail_402_; lean_object* v___x_403_; lean_object* v___x_404_; lean_object* v___x_405_; 
-v_head_401_ = lean_ctor_get(v_as_x27_397_, 0);
-v_tail_402_ = lean_ctor_get(v_as_x27_397_, 1);
-v___x_403_ = ((lean_object*)(lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg___closed__0));
-v___x_404_ = lean_string_append(v___x_403_, v_head_401_);
-v___x_405_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_404_);
-if (lean_obj_tag(v___x_405_) == 0)
+lean_object* v_head_457_; lean_object* v_tail_458_; lean_object* v___x_459_; lean_object* v___x_460_; lean_object* v___x_461_; 
+v_head_457_ = lean_ctor_get(v_as_x27_453_, 0);
+v_tail_458_ = lean_ctor_get(v_as_x27_453_, 1);
+v___x_459_ = ((lean_object*)(lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg___closed__0));
+v___x_460_ = lean_string_append(v___x_459_, v_head_457_);
+v___x_461_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_460_);
+if (lean_obj_tag(v___x_461_) == 0)
 {
-lean_object* v___x_406_; 
-lean_dec_ref(v___x_405_);
-v___x_406_ = lean_box(0);
-v_as_x27_397_ = v_tail_402_;
-v_b_398_ = v___x_406_;
+lean_object* v___x_462_; 
+lean_dec_ref(v___x_461_);
+v___x_462_ = lean_box(0);
+v_as_x27_453_ = v_tail_458_;
+v_b_454_ = v___x_462_;
 goto _start;
 }
 else
 {
-return v___x_405_;
+return v___x_461_;
 }
 }
 }
 }
-LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg___boxed(lean_object* v_as_x27_408_, lean_object* v_b_409_, lean_object* v___y_410_){
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg___boxed(lean_object* v_as_x27_464_, lean_object* v_b_465_, lean_object* v___y_466_){
 _start:
 {
-lean_object* v_res_411_; 
-v_res_411_ = lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(v_as_x27_408_, v_b_409_);
-lean_dec(v_as_x27_408_);
-return v_res_411_;
+lean_object* v_res_467_; 
+v_res_467_ = lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(v_as_x27_464_, v_b_465_);
+lean_dec(v_as_x27_464_);
+return v_res_467_;
 }
 }
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_showProofCertificates(){
 _start:
 {
-lean_object* v___x_414_; lean_object* v___x_415_; 
-v___x_414_ = ((lean_object*)(lp_SoftwareLogic__Go_showProofCertificates___closed__0));
-v___x_415_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_414_);
-if (lean_obj_tag(v___x_415_) == 0)
+lean_object* v___x_470_; lean_object* v___x_471_; 
+v___x_470_ = ((lean_object*)(lp_SoftwareLogic__Go_showProofCertificates___closed__0));
+v___x_471_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_470_);
+if (lean_obj_tag(v___x_471_) == 0)
 {
-lean_object* v___x_416_; lean_object* v___x_417_; lean_object* v___x_418_; 
-lean_dec_ref(v___x_415_);
-v___x_416_ = ((lean_object*)(lp_SoftwareLogic__Go_proofCertificates));
-v___x_417_ = lean_box(0);
-v___x_418_ = lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(v___x_416_, v___x_417_);
-if (lean_obj_tag(v___x_418_) == 0)
+lean_object* v___x_472_; lean_object* v___x_473_; lean_object* v___x_474_; 
+lean_dec_ref(v___x_471_);
+v___x_472_ = ((lean_object*)(lp_SoftwareLogic__Go_proofCertificates));
+v___x_473_ = lean_box(0);
+v___x_474_ = lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(v___x_472_, v___x_473_);
+if (lean_obj_tag(v___x_474_) == 0)
 {
-lean_object* v___x_419_; lean_object* v___x_420_; 
-lean_dec_ref(v___x_418_);
-v___x_419_ = ((lean_object*)(lp_SoftwareLogic__Go_showState___closed__1));
-v___x_420_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_419_);
-return v___x_420_;
+lean_object* v___x_475_; lean_object* v___x_476_; 
+lean_dec_ref(v___x_474_);
+v___x_475_ = ((lean_object*)(lp_SoftwareLogic__Go_showState___closed__1));
+v___x_476_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_475_);
+return v___x_476_;
 }
 else
 {
-return v___x_418_;
+return v___x_474_;
 }
 }
 else
 {
-return v___x_415_;
+return v___x_471_;
 }
 }
 }
-LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_showProofCertificates___boxed(lean_object* v_a_421_){
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_showProofCertificates___boxed(lean_object* v_a_477_){
 _start:
 {
-lean_object* v_res_422_; 
-v_res_422_ = lp_SoftwareLogic__Go_showProofCertificates();
-return v_res_422_;
+lean_object* v_res_478_; 
+v_res_478_ = lp_SoftwareLogic__Go_showProofCertificates();
+return v_res_478_;
 }
 }
-LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0(lean_object* v_as_423_, lean_object* v_as_x27_424_, lean_object* v_b_425_, lean_object* v_a_426_){
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0(lean_object* v_as_479_, lean_object* v_as_x27_480_, lean_object* v_b_481_, lean_object* v_a_482_){
 _start:
 {
-lean_object* v___x_428_; 
-v___x_428_ = lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(v_as_x27_424_, v_b_425_);
-return v___x_428_;
+lean_object* v___x_484_; 
+v___x_484_ = lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___redArg(v_as_x27_480_, v_b_481_);
+return v___x_484_;
 }
 }
-LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___boxed(lean_object* v_as_429_, lean_object* v_as_x27_430_, lean_object* v_b_431_, lean_object* v_a_432_, lean_object* v___y_433_){
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0___boxed(lean_object* v_as_485_, lean_object* v_as_x27_486_, lean_object* v_b_487_, lean_object* v_a_488_, lean_object* v___y_489_){
 _start:
 {
-lean_object* v_res_434_; 
-v_res_434_ = lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0(v_as_429_, v_as_x27_430_, v_b_431_, v_a_432_);
-lean_dec(v_as_x27_430_);
-lean_dec(v_as_429_);
-return v_res_434_;
+lean_object* v_res_490_; 
+v_res_490_ = lp_SoftwareLogic__Go_List_forIn_x27_loop___at___00showProofCertificates_spec__0(v_as_485_, v_as_x27_486_, v_b_487_, v_a_488_);
+lean_dec(v_as_x27_486_);
+lean_dec(v_as_485_);
+return v_res_490_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_occupiedTest_x3f(void){
 _start:
 {
-lean_object* v___x_435_; 
-v___x_435_ = lp_SoftwareLogic__Go_oneMove_x3f;
-if (lean_obj_tag(v___x_435_) == 0)
+lean_object* v___x_491_; 
+v___x_491_ = lp_SoftwareLogic__Go_oneMove_x3f;
+if (lean_obj_tag(v___x_491_) == 0)
 {
-return v___x_435_;
+return v___x_491_;
 }
 else
 {
-lean_object* v_val_436_; lean_object* v___x_437_; lean_object* v___x_438_; 
-v_val_436_ = lean_ctor_get(v___x_435_, 0);
-v___x_437_ = ((lean_object*)(lp_SoftwareLogic__Go_centerMove));
-lean_inc(v_val_436_);
-v___x_438_ = lp_SoftwareLogic__Go_Go_applyCheckedMove_x3f(v_val_436_, v___x_437_);
-return v___x_438_;
+lean_object* v_val_492_; lean_object* v___x_493_; lean_object* v___x_494_; 
+v_val_492_ = lean_ctor_get(v___x_491_, 0);
+v___x_493_ = ((lean_object*)(lp_SoftwareLogic__Go_centerMove));
+lean_inc(v_val_492_);
+v___x_494_ = lp_SoftwareLogic__Go_Go_applyCheckedMove_x3f(v_val_492_, v___x_493_);
+return v___x_494_;
 }
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_passState_x3f___closed__0(void){
 _start:
 {
-lean_object* v___x_439_; lean_object* v___x_440_; lean_object* v___x_441_; 
-v___x_439_ = lean_box(1);
-v___x_440_ = lp_SoftwareLogic__Go_st0;
-v___x_441_ = lp_SoftwareLogic__Go_Go_applyCheckedMove_x3f(v___x_440_, v___x_439_);
-return v___x_441_;
+lean_object* v___x_495_; lean_object* v___x_496_; lean_object* v___x_497_; 
+v___x_495_ = lean_box(1);
+v___x_496_ = lp_SoftwareLogic__Go_st0;
+v___x_497_ = lp_SoftwareLogic__Go_Go_applyCheckedMove_x3f(v___x_496_, v___x_495_);
+return v___x_497_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_passState_x3f(void){
 _start:
 {
-lean_object* v___x_442_; 
-v___x_442_ = lean_obj_once(&lp_SoftwareLogic__Go_passState_x3f___closed__0, &lp_SoftwareLogic__Go_passState_x3f___closed__0_once, _init_lp_SoftwareLogic__Go_passState_x3f___closed__0);
-return v___x_442_;
+lean_object* v___x_498_; 
+v___x_498_ = lean_obj_once(&lp_SoftwareLogic__Go_passState_x3f___closed__0, &lp_SoftwareLogic__Go_passState_x3f___closed__0_once, _init_lp_SoftwareLogic__Go_passState_x3f___closed__0);
+return v___x_498_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_finalState_x3f___closed__0(void){
 _start:
 {
-lean_object* v___x_443_; lean_object* v___x_444_; lean_object* v___x_445_; 
-v___x_443_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves));
-v___x_444_ = lp_SoftwareLogic__Go_st0;
-v___x_445_ = lp_SoftwareLogic__Go_Go_applyCheckedMoves_x3f(v___x_444_, v___x_443_);
-return v___x_445_;
+lean_object* v___x_499_; lean_object* v___x_500_; lean_object* v___x_501_; 
+v___x_499_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves));
+v___x_500_ = lp_SoftwareLogic__Go_st0;
+v___x_501_ = lp_SoftwareLogic__Go_Go_applyCheckedMoves_x3f(v___x_500_, v___x_499_);
+return v___x_501_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_finalState_x3f(void){
 _start:
 {
-lean_object* v___x_446_; 
-v___x_446_ = lean_obj_once(&lp_SoftwareLogic__Go_finalState_x3f___closed__0, &lp_SoftwareLogic__Go_finalState_x3f___closed__0_once, _init_lp_SoftwareLogic__Go_finalState_x3f___closed__0);
-return v___x_446_;
+lean_object* v___x_502_; 
+v___x_502_ = lean_obj_once(&lp_SoftwareLogic__Go_finalState_x3f___closed__0, &lp_SoftwareLogic__Go_finalState_x3f___closed__0_once, _init_lp_SoftwareLogic__Go_finalState_x3f___closed__0);
+return v___x_502_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_captureMoves(void){
 _start:
 {
-lean_object* v___x_447_; 
-v___x_447_ = lp_SoftwareLogic__Go_Go_captureDemoMoves;
-return v___x_447_;
+lean_object* v___x_503_; 
+v___x_503_ = lp_SoftwareLogic__Go_Go_captureDemoMoves;
+return v___x_503_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_captureState_x3f___closed__0(void){
 _start:
 {
-lean_object* v___x_448_; lean_object* v___x_449_; lean_object* v___x_450_; 
-v___x_448_ = lp_SoftwareLogic__Go_Go_captureDemoMoves;
-v___x_449_ = lp_SoftwareLogic__Go_st0;
-v___x_450_ = lp_SoftwareLogic__Go_Go_applyCheckedMoves_x3f(v___x_449_, v___x_448_);
-return v___x_450_;
+lean_object* v___x_504_; lean_object* v___x_505_; lean_object* v___x_506_; 
+v___x_504_ = lp_SoftwareLogic__Go_Go_captureDemoMoves;
+v___x_505_ = lp_SoftwareLogic__Go_st0;
+v___x_506_ = lp_SoftwareLogic__Go_Go_applyCheckedMoves_x3f(v___x_505_, v___x_504_);
+return v___x_506_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_captureState_x3f(void){
 _start:
 {
-lean_object* v___x_451_; 
-v___x_451_ = lean_obj_once(&lp_SoftwareLogic__Go_captureState_x3f___closed__0, &lp_SoftwareLogic__Go_captureState_x3f___closed__0_once, _init_lp_SoftwareLogic__Go_captureState_x3f___closed__0);
-return v___x_451_;
+lean_object* v___x_507_; 
+v___x_507_ = lean_obj_once(&lp_SoftwareLogic__Go_captureState_x3f___closed__0, &lp_SoftwareLogic__Go_captureState_x3f___closed__0_once, _init_lp_SoftwareLogic__Go_captureState_x3f___closed__0);
+return v___x_507_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_mixedState_x3f___closed__0(void){
 _start:
 {
-lean_object* v___x_486_; lean_object* v___x_487_; lean_object* v___x_488_; 
-v___x_486_ = ((lean_object*)(lp_SoftwareLogic__Go_mixedMoves));
-v___x_487_ = lp_SoftwareLogic__Go_st0;
-v___x_488_ = lp_SoftwareLogic__Go_Go_applyCheckedMoves_x3f(v___x_487_, v___x_486_);
-return v___x_488_;
+lean_object* v___x_542_; lean_object* v___x_543_; lean_object* v___x_544_; 
+v___x_542_ = ((lean_object*)(lp_SoftwareLogic__Go_mixedMoves));
+v___x_543_ = lp_SoftwareLogic__Go_st0;
+v___x_544_ = lp_SoftwareLogic__Go_Go_applyCheckedMoves_x3f(v___x_543_, v___x_542_);
+return v___x_544_;
 }
 }
 static lean_object* _init_lp_SoftwareLogic__Go_mixedState_x3f(void){
 _start:
 {
-lean_object* v___x_489_; 
-v___x_489_ = lean_obj_once(&lp_SoftwareLogic__Go_mixedState_x3f___closed__0, &lp_SoftwareLogic__Go_mixedState_x3f___closed__0_once, _init_lp_SoftwareLogic__Go_mixedState_x3f___closed__0);
-return v___x_489_;
+lean_object* v___x_545_; 
+v___x_545_ = lean_obj_once(&lp_SoftwareLogic__Go_mixedState_x3f___closed__0, &lp_SoftwareLogic__Go_mixedState_x3f___closed__0_once, _init_lp_SoftwareLogic__Go_mixedState_x3f___closed__0);
+return v___x_545_;
+}
+}
+static lean_object* _init_lp_SoftwareLogic__Go_main___closed__21(void){
+_start:
+{
+lean_object* v___x_569_; lean_object* v___x_570_; lean_object* v___x_571_; 
+v___x_569_ = ((lean_object*)(lp_SoftwareLogic__Go_suicideMove));
+v___x_570_ = ((lean_object*)(lp_SoftwareLogic__Go_suicideState));
+v___x_571_ = lp_SoftwareLogic__Go_Go_applyCheckedMove_x3f(v___x_570_, v___x_569_);
+return v___x_571_;
 }
 }
 LEAN_EXPORT lean_object* _lean_main(){
 _start:
 {
-lean_object* v___x_527_; lean_object* v___x_528_; 
-v___x_527_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__0));
-v___x_528_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_527_);
-if (lean_obj_tag(v___x_528_) == 0)
-{
-lean_object* v___x_529_; lean_object* v___x_530_; 
-lean_dec_ref(v___x_528_);
-v___x_529_ = ((lean_object*)(lp_SoftwareLogic__Go_showState___closed__1));
-v___x_530_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_529_);
-if (lean_obj_tag(v___x_530_) == 0)
-{
-lean_object* v___x_531_; 
-lean_dec_ref(v___x_530_);
-v___x_531_ = lp_SoftwareLogic__Go_showProofCertificates();
-if (lean_obj_tag(v___x_531_) == 0)
-{
-lean_object* v___x_532_; lean_object* v___x_533_; lean_object* v___x_553_; 
-lean_dec_ref(v___x_531_);
-v___x_532_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__1));
-v___x_533_ = lp_SoftwareLogic__Go_st0;
-v___x_553_ = lp_SoftwareLogic__Go_showState(v___x_532_, v___x_533_);
-if (lean_obj_tag(v___x_553_) == 0)
-{
-lean_object* v___x_554_; lean_object* v___x_555_; lean_object* v___x_556_; 
-lean_dec_ref(v___x_553_);
-v___x_554_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__10));
-v___x_555_ = ((lean_object*)(lp_SoftwareLogic__Go_centerMove));
-v___x_556_ = lp_SoftwareLogic__Go_showCheckedMove(v___x_554_, v___x_533_, v___x_555_);
-if (lean_obj_tag(v___x_556_) == 0)
-{
-lean_object* v___x_557_; lean_object* v___x_558_; lean_object* v___x_559_; 
-lean_dec_ref(v___x_556_);
-v___x_557_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__11));
-v___x_558_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__13));
-v___x_559_ = lp_SoftwareLogic__Go_showCheckedMove(v___x_557_, v___x_533_, v___x_558_);
-if (lean_obj_tag(v___x_559_) == 0)
-{
-lean_object* v___x_560_; lean_object* v___x_561_; 
-lean_dec_ref(v___x_559_);
-v___x_560_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__14));
-v___x_561_ = lp_SoftwareLogic__Go_showLegality(v___x_560_, v___x_533_, v___x_555_);
-if (lean_obj_tag(v___x_561_) == 0)
-{
-lean_object* v___x_562_; lean_object* v___x_563_; 
-lean_dec_ref(v___x_561_);
-v___x_562_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__15));
-v___x_563_ = lp_SoftwareLogic__Go_showLegality(v___x_562_, v___x_533_, v___x_558_);
-if (lean_obj_tag(v___x_563_) == 0)
-{
-lean_object* v___x_564_; lean_object* v___x_565_; lean_object* v___x_566_; 
-lean_dec_ref(v___x_563_);
-v___x_564_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__16));
-v___x_565_ = lean_box(1);
-v___x_566_ = lp_SoftwareLogic__Go_showLegality(v___x_564_, v___x_533_, v___x_565_);
-if (lean_obj_tag(v___x_566_) == 0)
-{
-lean_object* v___x_567_; lean_object* v___x_568_; lean_object* v___x_591_; 
-lean_dec_ref(v___x_566_);
-v___x_567_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__17));
-v___x_568_ = lp_SoftwareLogic__Go_oneMove_x3f;
-v___x_591_ = lp_SoftwareLogic__Go_showResult(v___x_567_, v___x_568_);
-if (lean_obj_tag(v___x_591_) == 0)
-{
-lean_object* v___x_592_; lean_object* v___x_593_; lean_object* v___x_594_; 
-lean_dec_ref(v___x_591_);
-v___x_592_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__27));
-v___x_593_ = lp_SoftwareLogic__Go_occupiedTest_x3f;
-v___x_594_ = lp_SoftwareLogic__Go_showResult(v___x_592_, v___x_593_);
+lean_object* v___x_593_; lean_object* v___x_594_; 
+v___x_593_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__0));
+v___x_594_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_593_);
 if (lean_obj_tag(v___x_594_) == 0)
 {
-lean_object* v___x_595_; lean_object* v___x_596_; lean_object* v___x_597_; 
+lean_object* v___x_595_; lean_object* v___x_596_; 
 lean_dec_ref(v___x_594_);
-v___x_595_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__28));
-v___x_596_ = lp_SoftwareLogic__Go_passState_x3f;
-v___x_597_ = lp_SoftwareLogic__Go_showResult(v___x_595_, v___x_596_);
+v___x_595_ = ((lean_object*)(lp_SoftwareLogic__Go_showState___closed__1));
+v___x_596_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_595_);
+if (lean_obj_tag(v___x_596_) == 0)
+{
+lean_object* v___x_597_; 
+lean_dec_ref(v___x_596_);
+v___x_597_ = lp_SoftwareLogic__Go_showProofCertificates();
 if (lean_obj_tag(v___x_597_) == 0)
 {
-lean_object* v___x_598_; lean_object* v___x_599_; lean_object* v___x_600_; 
+lean_object* v___x_598_; lean_object* v___x_599_; lean_object* v___x_619_; 
 lean_dec_ref(v___x_597_);
-v___x_598_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__29));
-v___x_599_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves));
-v___x_600_ = lp_SoftwareLogic__Go_showSequence(v___x_598_, v___x_533_, v___x_599_);
-if (lean_obj_tag(v___x_600_) == 0)
+v___x_598_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__1));
+v___x_599_ = lp_SoftwareLogic__Go_st0;
+v___x_619_ = lp_SoftwareLogic__Go_showState(v___x_598_, v___x_599_);
+if (lean_obj_tag(v___x_619_) == 0)
 {
-lean_object* v___x_601_; lean_object* v___x_602_; 
-lean_dec_ref(v___x_600_);
-v___x_601_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__30));
-v___x_602_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_601_);
-if (lean_obj_tag(v___x_602_) == 0)
+lean_object* v___x_620_; lean_object* v___x_621_; lean_object* v___x_622_; 
+lean_dec_ref(v___x_619_);
+v___x_620_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__10));
+v___x_621_ = ((lean_object*)(lp_SoftwareLogic__Go_centerMove));
+v___x_622_ = lp_SoftwareLogic__Go_showCheckedMove(v___x_620_, v___x_599_, v___x_621_);
+if (lean_obj_tag(v___x_622_) == 0)
 {
-lean_object* v___x_603_; 
-lean_dec_ref(v___x_602_);
-v___x_603_ = lp_SoftwareLogic__Go_finalState_x3f;
+lean_object* v___x_623_; lean_object* v___x_624_; lean_object* v___x_625_; 
+lean_dec_ref(v___x_622_);
+v___x_623_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__11));
+v___x_624_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__13));
+v___x_625_ = lp_SoftwareLogic__Go_showCheckedMove(v___x_623_, v___x_599_, v___x_624_);
+if (lean_obj_tag(v___x_625_) == 0)
+{
+lean_object* v___x_626_; lean_object* v___x_627_; 
+lean_dec_ref(v___x_625_);
+v___x_626_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__14));
+v___x_627_ = lp_SoftwareLogic__Go_showLegality(v___x_626_, v___x_599_, v___x_621_);
+if (lean_obj_tag(v___x_627_) == 0)
+{
+lean_object* v___x_628_; lean_object* v___x_629_; 
+lean_dec_ref(v___x_627_);
+v___x_628_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__15));
+v___x_629_ = lp_SoftwareLogic__Go_showLegality(v___x_628_, v___x_599_, v___x_624_);
+if (lean_obj_tag(v___x_629_) == 0)
+{
+lean_object* v___x_630_; lean_object* v___x_631_; lean_object* v___x_632_; 
+lean_dec_ref(v___x_629_);
+v___x_630_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__16));
+v___x_631_ = lean_box(1);
+v___x_632_ = lp_SoftwareLogic__Go_showLegality(v___x_630_, v___x_599_, v___x_631_);
+if (lean_obj_tag(v___x_632_) == 0)
+{
+lean_object* v___x_633_; lean_object* v___x_634_; lean_object* v___x_702_; 
+lean_dec_ref(v___x_632_);
+v___x_633_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__17));
+v___x_634_ = lp_SoftwareLogic__Go_oneMove_x3f;
+v___x_702_ = lp_SoftwareLogic__Go_showResult(v___x_633_, v___x_634_);
+if (lean_obj_tag(v___x_702_) == 0)
+{
+lean_object* v___x_703_; lean_object* v___x_704_; lean_object* v___x_705_; 
+lean_dec_ref(v___x_702_);
+v___x_703_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__35));
+v___x_704_ = lp_SoftwareLogic__Go_occupiedTest_x3f;
+v___x_705_ = lp_SoftwareLogic__Go_showResult(v___x_703_, v___x_704_);
+if (lean_obj_tag(v___x_705_) == 0)
+{
+lean_object* v___x_706_; lean_object* v___x_707_; lean_object* v___x_708_; 
+lean_dec_ref(v___x_705_);
+v___x_706_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__36));
+v___x_707_ = lp_SoftwareLogic__Go_passState_x3f;
+v___x_708_ = lp_SoftwareLogic__Go_showResult(v___x_706_, v___x_707_);
+if (lean_obj_tag(v___x_708_) == 0)
+{
+lean_object* v___x_709_; lean_object* v___x_710_; lean_object* v___x_711_; 
+lean_dec_ref(v___x_708_);
+v___x_709_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__37));
+v___x_710_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves));
+v___x_711_ = lp_SoftwareLogic__Go_showSequence(v___x_709_, v___x_599_, v___x_710_);
+if (lean_obj_tag(v___x_711_) == 0)
+{
+lean_object* v___x_712_; lean_object* v___x_713_; 
+lean_dec_ref(v___x_711_);
+v___x_712_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__38));
+v___x_713_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_712_);
+if (lean_obj_tag(v___x_713_) == 0)
+{
+lean_object* v___x_714_; 
+lean_dec_ref(v___x_713_);
+v___x_714_ = lp_SoftwareLogic__Go_finalState_x3f;
+if (lean_obj_tag(v___x_714_) == 0)
+{
+lean_object* v___x_715_; lean_object* v___x_716_; 
+v___x_715_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__39));
+v___x_716_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_715_);
+if (lean_obj_tag(v___x_716_) == 0)
+{
+lean_dec_ref(v___x_716_);
+goto v___jp_663_;
+}
+else
+{
+return v___x_716_;
+}
+}
+else
+{
+lean_object* v_val_717_; lean_object* v_board_718_; uint8_t v_turn_719_; lean_object* v___x_720_; lean_object* v___x_721_; 
+v_val_717_ = lean_ctor_get(v___x_714_, 0);
+v_board_718_ = lean_ctor_get(v_val_717_, 1);
+v_turn_719_ = lean_ctor_get_uint8(v_val_717_, sizeof(void*)*2);
+lean_inc(v_board_718_);
+v___x_720_ = lp_SoftwareLogic__Go_Go_boardToString(v_board_718_);
+v___x_721_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_720_);
+if (lean_obj_tag(v___x_721_) == 0)
+{
+lean_object* v___x_722_; lean_object* v___x_723_; lean_object* v___x_724_; lean_object* v___x_725_; lean_object* v___x_726_; lean_object* v___x_727_; lean_object* v___x_728_; 
+lean_dec_ref(v___x_721_);
+v___x_722_ = ((lean_object*)(lp_SoftwareLogic__Go_showState___closed__0));
+v___x_723_ = lean_unsigned_to_nat(0u);
+v___x_724_ = lp_SoftwareLogic__Go_Go_instReprStone_repr(v_turn_719_, v___x_723_);
+v___x_725_ = lean_unsigned_to_nat(120u);
+v___x_726_ = l_Std_Format_pretty(v___x_724_, v___x_725_, v___x_723_, v___x_723_);
+v___x_727_ = lean_string_append(v___x_722_, v___x_726_);
+lean_dec_ref(v___x_726_);
+v___x_728_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_727_);
+if (lean_obj_tag(v___x_728_) == 0)
+{
+lean_dec_ref(v___x_728_);
+goto v___jp_663_;
+}
+else
+{
+return v___x_728_;
+}
+}
+else
+{
+return v___x_721_;
+}
+}
+}
+else
+{
+return v___x_713_;
+}
+}
+else
+{
+return v___x_711_;
+}
+}
+else
+{
+return v___x_708_;
+}
+}
+else
+{
+return v___x_705_;
+}
+}
+else
+{
+return v___x_702_;
+}
+v___jp_635_:
+{
+lean_object* v___x_636_; 
+v___x_636_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_595_);
+if (lean_obj_tag(v___x_636_) == 0)
+{
+lean_object* v___x_637_; lean_object* v___x_638_; lean_object* v___x_639_; 
+lean_dec_ref(v___x_636_);
+v___x_637_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__18));
+v___x_638_ = ((lean_object*)(lp_SoftwareLogic__Go_suicideState));
+v___x_639_ = lp_SoftwareLogic__Go_showState(v___x_637_, v___x_638_);
+if (lean_obj_tag(v___x_639_) == 0)
+{
+lean_object* v___x_640_; lean_object* v___x_641_; lean_object* v___x_642_; 
+lean_dec_ref(v___x_639_);
+v___x_640_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__19));
+v___x_641_ = ((lean_object*)(lp_SoftwareLogic__Go_suicideMove));
+v___x_642_ = lp_SoftwareLogic__Go_showLegality(v___x_640_, v___x_638_, v___x_641_);
+if (lean_obj_tag(v___x_642_) == 0)
+{
+lean_object* v___x_643_; lean_object* v___x_644_; lean_object* v___x_645_; 
+lean_dec_ref(v___x_642_);
+v___x_643_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__20));
+v___x_644_ = lean_obj_once(&lp_SoftwareLogic__Go_main___closed__21, &lp_SoftwareLogic__Go_main___closed__21_once, _init_lp_SoftwareLogic__Go_main___closed__21);
+v___x_645_ = lp_SoftwareLogic__Go_showResult(v___x_643_, v___x_644_);
+if (lean_obj_tag(v___x_645_) == 0)
+{
+lean_object* v___x_646_; lean_object* v___x_647_; 
+lean_dec_ref(v___x_645_);
+v___x_646_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__22));
+v___x_647_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_646_);
+if (lean_obj_tag(v___x_647_) == 0)
+{
+lean_dec_ref(v___x_647_);
+if (lean_obj_tag(v___x_634_) == 0)
+{
+lean_object* v___x_648_; lean_object* v___x_649_; 
+v___x_648_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__23));
+v___x_649_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_648_);
+if (lean_obj_tag(v___x_649_) == 0)
+{
+lean_object* v___x_650_; 
+lean_dec_ref(v___x_649_);
+v___x_650_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_595_);
+if (lean_obj_tag(v___x_650_) == 0)
+{
+lean_dec_ref(v___x_650_);
+goto v___jp_600_;
+}
+else
+{
+return v___x_650_;
+}
+}
+else
+{
+return v___x_649_;
+}
+}
+else
+{
+lean_object* v_val_651_; lean_object* v___x_652_; lean_object* v___x_653_; 
+v_val_651_ = lean_ctor_get(v___x_634_, 0);
+v___x_652_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__24));
+lean_inc(v_val_651_);
+v___x_653_ = lp_SoftwareLogic__Go_showState(v___x_652_, v_val_651_);
+if (lean_obj_tag(v___x_653_) == 0)
+{
+lean_object* v___x_654_; lean_object* v___x_655_; lean_object* v___x_656_; 
+lean_dec_ref(v___x_653_);
+v___x_654_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__25));
+v___x_655_ = ((lean_object*)(lp_SoftwareLogic__Go_centerMove___closed__1));
+lean_inc(v_val_651_);
+v___x_656_ = lp_SoftwareLogic__Go_showLegality(v___x_654_, v_val_651_, v___x_655_);
+if (lean_obj_tag(v___x_656_) == 0)
+{
+lean_object* v___x_657_; lean_object* v___x_658_; lean_object* v___x_659_; 
+lean_dec_ref(v___x_656_);
+v___x_657_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__26));
+v___x_658_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves___closed__5));
+lean_inc(v_val_651_);
+v___x_659_ = lp_SoftwareLogic__Go_showLegality(v___x_657_, v_val_651_, v___x_658_);
+if (lean_obj_tag(v___x_659_) == 0)
+{
+lean_object* v___x_660_; lean_object* v___x_661_; lean_object* v___x_662_; 
+lean_dec_ref(v___x_659_);
+v___x_660_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__27));
+v___x_661_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__29));
+lean_inc(v_val_651_);
+v___x_662_ = lp_SoftwareLogic__Go_showLegality(v___x_660_, v_val_651_, v___x_661_);
+if (lean_obj_tag(v___x_662_) == 0)
+{
+lean_dec_ref(v___x_662_);
+goto v___jp_600_;
+}
+else
+{
+return v___x_662_;
+}
+}
+else
+{
+return v___x_659_;
+}
+}
+else
+{
+return v___x_656_;
+}
+}
+else
+{
+return v___x_653_;
+}
+}
+}
+else
+{
+return v___x_647_;
+}
+}
+else
+{
+return v___x_645_;
+}
+}
+else
+{
+return v___x_642_;
+}
+}
+else
+{
+return v___x_639_;
+}
+}
+else
+{
+return v___x_636_;
+}
+}
+v___jp_663_:
+{
+lean_object* v___x_664_; 
+v___x_664_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_595_);
+if (lean_obj_tag(v___x_664_) == 0)
+{
+lean_object* v___x_665_; lean_object* v___x_666_; lean_object* v___x_667_; 
+lean_dec_ref(v___x_664_);
+v___x_665_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__30));
+v___x_666_ = lp_SoftwareLogic__Go_Go_captureDemoMoves;
+v___x_667_ = lp_SoftwareLogic__Go_showSequence(v___x_665_, v___x_599_, v___x_666_);
+if (lean_obj_tag(v___x_667_) == 0)
+{
+lean_object* v___x_668_; lean_object* v___x_669_; 
+lean_dec_ref(v___x_667_);
+v___x_668_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__31));
+v___x_669_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_668_);
+if (lean_obj_tag(v___x_669_) == 0)
+{
+lean_object* v___x_670_; 
+lean_dec_ref(v___x_669_);
+v___x_670_ = lp_SoftwareLogic__Go_captureState_x3f;
+if (lean_obj_tag(v___x_670_) == 0)
+{
+lean_object* v___x_671_; lean_object* v___x_672_; 
+v___x_671_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__32));
+v___x_672_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_671_);
+if (lean_obj_tag(v___x_672_) == 0)
+{
+lean_dec_ref(v___x_672_);
+goto v___jp_635_;
+}
+else
+{
+return v___x_672_;
+}
+}
+else
+{
+lean_object* v_val_673_; lean_object* v_board_674_; lean_object* v___x_675_; lean_object* v___x_676_; lean_object* v___x_677_; lean_object* v___x_678_; lean_object* v___x_679_; lean_object* v___x_680_; lean_object* v___x_681_; lean_object* v___x_682_; lean_object* v___x_683_; 
+v_val_673_ = lean_ctor_get(v___x_670_, 0);
+v_board_674_ = lean_ctor_get(v_val_673_, 1);
+v___x_675_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__33));
+v___x_676_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves___closed__4));
+v___x_677_ = lp_SoftwareLogic__Go_Go_stoneAt_x3f(v_board_674_, v___x_676_);
+v___x_678_ = lean_unsigned_to_nat(0u);
+v___x_679_ = lp_SoftwareLogic__Go_Option_repr___at___00List_repr___at___00List_repr___at___00Go_instReprGameState_repr_spec__0_spec__0_spec__1(v___x_677_, v___x_678_);
+lean_dec(v___x_677_);
+v___x_680_ = lean_unsigned_to_nat(120u);
+v___x_681_ = l_Std_Format_pretty(v___x_679_, v___x_680_, v___x_678_, v___x_678_);
+v___x_682_ = lean_string_append(v___x_675_, v___x_681_);
+lean_dec_ref(v___x_681_);
+v___x_683_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_682_);
+if (lean_obj_tag(v___x_683_) == 0)
+{
+lean_object* v___x_684_; lean_object* v___x_685_; lean_object* v___x_686_; lean_object* v___x_687_; lean_object* v___x_688_; lean_object* v___x_689_; lean_object* v___x_690_; lean_object* v___x_691_; lean_object* v___x_692_; lean_object* v___x_693_; lean_object* v___x_694_; lean_object* v___x_695_; lean_object* v___x_696_; lean_object* v___x_697_; lean_object* v___x_698_; lean_object* v___x_699_; lean_object* v___x_700_; lean_object* v___x_701_; 
+lean_dec_ref(v___x_683_);
+v___x_684_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__34));
+v___x_685_ = ((lean_object*)(lp_SoftwareLogic__Go_mixedMoves___closed__2));
+v___x_686_ = lp_SoftwareLogic__Go_Go_stoneAt_x3f(v_board_674_, v___x_685_);
+v___x_687_ = ((lean_object*)(lp_SoftwareLogic__Go_mixedMoves___closed__4));
+v___x_688_ = lp_SoftwareLogic__Go_Go_stoneAt_x3f(v_board_674_, v___x_687_);
+v___x_689_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves___closed__0));
+v___x_690_ = lp_SoftwareLogic__Go_Go_stoneAt_x3f(v_board_674_, v___x_689_);
+v___x_691_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves___closed__2));
+v___x_692_ = lp_SoftwareLogic__Go_Go_stoneAt_x3f(v_board_674_, v___x_691_);
+v___x_693_ = lean_box(0);
+v___x_694_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_694_, 0, v___x_692_);
+lean_ctor_set(v___x_694_, 1, v___x_693_);
+v___x_695_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_695_, 0, v___x_690_);
+lean_ctor_set(v___x_695_, 1, v___x_694_);
+v___x_696_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_696_, 0, v___x_688_);
+lean_ctor_set(v___x_696_, 1, v___x_695_);
+v___x_697_ = lean_alloc_ctor(1, 2, 0);
+lean_ctor_set(v___x_697_, 0, v___x_686_);
+lean_ctor_set(v___x_697_, 1, v___x_696_);
+v___x_698_ = lp_SoftwareLogic__Go_List_repr___at___00List_repr___at___00Go_instReprGameState_repr_spec__0_spec__0___redArg(v___x_697_);
+v___x_699_ = l_Std_Format_pretty(v___x_698_, v___x_680_, v___x_678_, v___x_678_);
+v___x_700_ = lean_string_append(v___x_684_, v___x_699_);
+lean_dec_ref(v___x_699_);
+v___x_701_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_700_);
+if (lean_obj_tag(v___x_701_) == 0)
+{
+lean_dec_ref(v___x_701_);
+goto v___jp_635_;
+}
+else
+{
+return v___x_701_;
+}
+}
+else
+{
+return v___x_683_;
+}
+}
+}
+else
+{
+return v___x_669_;
+}
+}
+else
+{
+return v___x_667_;
+}
+}
+else
+{
+return v___x_664_;
+}
+}
+}
+else
+{
+return v___x_632_;
+}
+}
+else
+{
+return v___x_629_;
+}
+}
+else
+{
+return v___x_627_;
+}
+}
+else
+{
+return v___x_625_;
+}
+}
+else
+{
+return v___x_622_;
+}
+}
+else
+{
+return v___x_619_;
+}
+v___jp_600_:
+{
+lean_object* v___x_601_; lean_object* v___x_602_; lean_object* v___x_603_; 
+v___x_601_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__2));
+v___x_602_ = ((lean_object*)(lp_SoftwareLogic__Go_mixedMoves));
+v___x_603_ = lp_SoftwareLogic__Go_showSequence(v___x_601_, v___x_599_, v___x_602_);
 if (lean_obj_tag(v___x_603_) == 0)
 {
 lean_object* v___x_604_; lean_object* v___x_605_; 
-v___x_604_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__31));
+lean_dec_ref(v___x_603_);
+v___x_604_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__3));
 v___x_605_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_604_);
 if (lean_obj_tag(v___x_605_) == 0)
 {
+lean_object* v___x_606_; lean_object* v___x_607_; 
 lean_dec_ref(v___x_605_);
-goto v___jp_569_;
+v___x_606_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__4));
+v___x_607_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_606_);
+if (lean_obj_tag(v___x_607_) == 0)
+{
+lean_object* v___x_608_; lean_object* v___x_609_; 
+lean_dec_ref(v___x_607_);
+v___x_608_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__5));
+v___x_609_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_608_);
+if (lean_obj_tag(v___x_609_) == 0)
+{
+lean_object* v___x_610_; lean_object* v___x_611_; 
+lean_dec_ref(v___x_609_);
+v___x_610_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__6));
+v___x_611_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_610_);
+if (lean_obj_tag(v___x_611_) == 0)
+{
+lean_object* v___x_612_; lean_object* v___x_613_; 
+lean_dec_ref(v___x_611_);
+v___x_612_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__7));
+v___x_613_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_612_);
+if (lean_obj_tag(v___x_613_) == 0)
+{
+lean_object* v___x_614_; lean_object* v___x_615_; 
+lean_dec_ref(v___x_613_);
+v___x_614_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__8));
+v___x_615_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_614_);
+if (lean_obj_tag(v___x_615_) == 0)
+{
+lean_object* v___x_616_; 
+lean_dec_ref(v___x_615_);
+v___x_616_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_595_);
+if (lean_obj_tag(v___x_616_) == 0)
+{
+lean_object* v___x_617_; lean_object* v___x_618_; 
+lean_dec_ref(v___x_616_);
+v___x_617_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__9));
+v___x_618_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_617_);
+return v___x_618_;
+}
+else
+{
+return v___x_616_;
+}
+}
+else
+{
+return v___x_615_;
+}
+}
+else
+{
+return v___x_613_;
+}
+}
+else
+{
+return v___x_611_;
+}
+}
+else
+{
+return v___x_609_;
+}
+}
+else
+{
+return v___x_607_;
+}
 }
 else
 {
@@ -1503,49 +2013,8 @@ return v___x_605_;
 }
 else
 {
-lean_object* v_val_606_; lean_object* v_board_607_; uint8_t v_turn_608_; lean_object* v___x_609_; lean_object* v___x_610_; 
-v_val_606_ = lean_ctor_get(v___x_603_, 0);
-v_board_607_ = lean_ctor_get(v_val_606_, 1);
-v_turn_608_ = lean_ctor_get_uint8(v_val_606_, sizeof(void*)*2);
-lean_inc(v_board_607_);
-v___x_609_ = lp_SoftwareLogic__Go_Go_boardToString(v_board_607_);
-v___x_610_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_609_);
-if (lean_obj_tag(v___x_610_) == 0)
-{
-lean_object* v___x_611_; lean_object* v___x_612_; lean_object* v___x_613_; lean_object* v___x_614_; lean_object* v___x_615_; lean_object* v___x_616_; lean_object* v___x_617_; 
-lean_dec_ref(v___x_610_);
-v___x_611_ = ((lean_object*)(lp_SoftwareLogic__Go_showState___closed__0));
-v___x_612_ = lean_unsigned_to_nat(0u);
-v___x_613_ = lp_SoftwareLogic__Go_Go_instReprStone_repr(v_turn_608_, v___x_612_);
-v___x_614_ = lean_unsigned_to_nat(120u);
-v___x_615_ = l_Std_Format_pretty(v___x_613_, v___x_614_, v___x_612_, v___x_612_);
-v___x_616_ = lean_string_append(v___x_611_, v___x_615_);
-lean_dec_ref(v___x_615_);
-v___x_617_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_616_);
-if (lean_obj_tag(v___x_617_) == 0)
-{
-lean_dec_ref(v___x_617_);
-goto v___jp_569_;
+return v___x_603_;
 }
-else
-{
-return v___x_617_;
-}
-}
-else
-{
-return v___x_610_;
-}
-}
-}
-else
-{
-return v___x_602_;
-}
-}
-else
-{
-return v___x_600_;
 }
 }
 else
@@ -1555,278 +2024,21 @@ return v___x_597_;
 }
 else
 {
+return v___x_596_;
+}
+}
+else
+{
 return v___x_594_;
 }
 }
-else
-{
-return v___x_591_;
 }
-v___jp_569_:
-{
-lean_object* v___x_570_; 
-v___x_570_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_529_);
-if (lean_obj_tag(v___x_570_) == 0)
-{
-lean_object* v___x_571_; lean_object* v___x_572_; lean_object* v___x_573_; 
-lean_dec_ref(v___x_570_);
-v___x_571_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__18));
-v___x_572_ = lp_SoftwareLogic__Go_Go_captureDemoMoves;
-v___x_573_ = lp_SoftwareLogic__Go_showSequence(v___x_571_, v___x_533_, v___x_572_);
-if (lean_obj_tag(v___x_573_) == 0)
-{
-lean_object* v___x_574_; lean_object* v___x_575_; 
-lean_dec_ref(v___x_573_);
-v___x_574_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__19));
-v___x_575_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_574_);
-if (lean_obj_tag(v___x_575_) == 0)
-{
-lean_dec_ref(v___x_575_);
-if (lean_obj_tag(v___x_568_) == 0)
-{
-lean_object* v___x_576_; lean_object* v___x_577_; 
-v___x_576_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__20));
-v___x_577_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_576_);
-if (lean_obj_tag(v___x_577_) == 0)
-{
-lean_object* v___x_578_; 
-lean_dec_ref(v___x_577_);
-v___x_578_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_529_);
-if (lean_obj_tag(v___x_578_) == 0)
-{
-lean_dec_ref(v___x_578_);
-goto v___jp_534_;
-}
-else
-{
-return v___x_578_;
-}
-}
-else
-{
-return v___x_577_;
-}
-}
-else
-{
-lean_object* v_val_579_; lean_object* v___x_580_; lean_object* v___x_581_; 
-v_val_579_ = lean_ctor_get(v___x_568_, 0);
-v___x_580_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__21));
-lean_inc(v_val_579_);
-v___x_581_ = lp_SoftwareLogic__Go_showState(v___x_580_, v_val_579_);
-if (lean_obj_tag(v___x_581_) == 0)
-{
-lean_object* v___x_582_; lean_object* v___x_583_; lean_object* v___x_584_; 
-lean_dec_ref(v___x_581_);
-v___x_582_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__22));
-v___x_583_ = ((lean_object*)(lp_SoftwareLogic__Go_centerMove___closed__1));
-lean_inc(v_val_579_);
-v___x_584_ = lp_SoftwareLogic__Go_showLegality(v___x_582_, v_val_579_, v___x_583_);
-if (lean_obj_tag(v___x_584_) == 0)
-{
-lean_object* v___x_585_; lean_object* v___x_586_; lean_object* v___x_587_; 
-lean_dec_ref(v___x_584_);
-v___x_585_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__23));
-v___x_586_ = ((lean_object*)(lp_SoftwareLogic__Go_demoMoves___closed__5));
-lean_inc(v_val_579_);
-v___x_587_ = lp_SoftwareLogic__Go_showLegality(v___x_585_, v_val_579_, v___x_586_);
-if (lean_obj_tag(v___x_587_) == 0)
-{
-lean_object* v___x_588_; lean_object* v___x_589_; lean_object* v___x_590_; 
-lean_dec_ref(v___x_587_);
-v___x_588_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__24));
-v___x_589_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__26));
-lean_inc(v_val_579_);
-v___x_590_ = lp_SoftwareLogic__Go_showLegality(v___x_588_, v_val_579_, v___x_589_);
-if (lean_obj_tag(v___x_590_) == 0)
-{
-lean_dec_ref(v___x_590_);
-goto v___jp_534_;
-}
-else
-{
-return v___x_590_;
-}
-}
-else
-{
-return v___x_587_;
-}
-}
-else
-{
-return v___x_584_;
-}
-}
-else
-{
-return v___x_581_;
-}
-}
-}
-else
-{
-return v___x_575_;
-}
-}
-else
-{
-return v___x_573_;
-}
-}
-else
-{
-return v___x_570_;
-}
-}
-}
-else
-{
-return v___x_566_;
-}
-}
-else
-{
-return v___x_563_;
-}
-}
-else
-{
-return v___x_561_;
-}
-}
-else
-{
-return v___x_559_;
-}
-}
-else
-{
-return v___x_556_;
-}
-}
-else
-{
-return v___x_553_;
-}
-v___jp_534_:
-{
-lean_object* v___x_535_; lean_object* v___x_536_; lean_object* v___x_537_; 
-v___x_535_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__2));
-v___x_536_ = ((lean_object*)(lp_SoftwareLogic__Go_mixedMoves));
-v___x_537_ = lp_SoftwareLogic__Go_showSequence(v___x_535_, v___x_533_, v___x_536_);
-if (lean_obj_tag(v___x_537_) == 0)
-{
-lean_object* v___x_538_; lean_object* v___x_539_; 
-lean_dec_ref(v___x_537_);
-v___x_538_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__3));
-v___x_539_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_538_);
-if (lean_obj_tag(v___x_539_) == 0)
-{
-lean_object* v___x_540_; lean_object* v___x_541_; 
-lean_dec_ref(v___x_539_);
-v___x_540_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__4));
-v___x_541_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_540_);
-if (lean_obj_tag(v___x_541_) == 0)
-{
-lean_object* v___x_542_; lean_object* v___x_543_; 
-lean_dec_ref(v___x_541_);
-v___x_542_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__5));
-v___x_543_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_542_);
-if (lean_obj_tag(v___x_543_) == 0)
-{
-lean_object* v___x_544_; lean_object* v___x_545_; 
-lean_dec_ref(v___x_543_);
-v___x_544_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__6));
-v___x_545_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_544_);
-if (lean_obj_tag(v___x_545_) == 0)
-{
-lean_object* v___x_546_; lean_object* v___x_547_; 
-lean_dec_ref(v___x_545_);
-v___x_546_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__7));
-v___x_547_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_546_);
-if (lean_obj_tag(v___x_547_) == 0)
-{
-lean_object* v___x_548_; lean_object* v___x_549_; 
-lean_dec_ref(v___x_547_);
-v___x_548_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__8));
-v___x_549_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_548_);
-if (lean_obj_tag(v___x_549_) == 0)
-{
-lean_object* v___x_550_; 
-lean_dec_ref(v___x_549_);
-v___x_550_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_529_);
-if (lean_obj_tag(v___x_550_) == 0)
-{
-lean_object* v___x_551_; lean_object* v___x_552_; 
-lean_dec_ref(v___x_550_);
-v___x_551_ = ((lean_object*)(lp_SoftwareLogic__Go_main___closed__9));
-v___x_552_ = lp_SoftwareLogic__Go_IO_println___at___00showState_spec__0(v___x_551_);
-return v___x_552_;
-}
-else
-{
-return v___x_550_;
-}
-}
-else
-{
-return v___x_549_;
-}
-}
-else
-{
-return v___x_547_;
-}
-}
-else
-{
-return v___x_545_;
-}
-}
-else
-{
-return v___x_543_;
-}
-}
-else
-{
-return v___x_541_;
-}
-}
-else
-{
-return v___x_539_;
-}
-}
-else
-{
-return v___x_537_;
-}
-}
-}
-else
-{
-return v___x_531_;
-}
-}
-else
-{
-return v___x_530_;
-}
-}
-else
-{
-return v___x_528_;
-}
-}
-}
-LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_main___boxed(lean_object* v_a_618_){
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_main___boxed(lean_object* v_a_729_){
 _start:
 {
-lean_object* v_res_619_; 
-v_res_619_ = _lean_main();
-return v_res_619_;
+lean_object* v_res_730_; 
+v_res_730_ = _lean_main();
+return v_res_730_;
 }
 }
 lean_object* initialize_Init(uint8_t builtin);

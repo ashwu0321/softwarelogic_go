@@ -1,9 +1,9 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["cfad2f857d3310b1.olean"],
+ {"o": ["fc32c571b772c5b5.olean"],
   "m": false,
-  "i": "360d64807edc319d.ilean",
+  "i": "dec0ebd411881931.ilean",
   "c": "7e46959923dcb284.c"},
  "log":
  [{"message":
@@ -24,10 +24,10 @@
       ["module plugins", "00000000000006bb"]]]]],
   ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
    "2c8d2623007dfc36"],
-  ["D:\\school\\softwarelogic\\Go\\Go\\Proofs.lean", "374fe7f6ae17d094"],
+  ["D:\\school\\softwarelogic\\Go\\Go\\Proofs.lean", "2390f964d030f17d"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Go.Proofs", "228c1cda55388790"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "456ea4a8a99a068d"}
+ "depHash": "59ed84380ceb93f2"}

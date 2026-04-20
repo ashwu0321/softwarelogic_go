@@ -39,6 +39,28 @@ theorem applyMove_pass_eq_switchTurn (st : GameState) :
     applyMove? st .pass = some (switchTurn st) := by
   rfl
 
+theorem legalMove_pass (st : GameState) :
+    legalMove st .pass = true := by
+  rfl
+
+theorem checkMove_rejects_illegal {st : GameState} {m : Move}
+    (h : legalMove st m = false) :
+    checkMove? st m = none := by
+  unfold checkMove?
+  simp [h]
+
+theorem applyCheckedMove_rejects_illegal {st : GameState} {m : Move}
+    (h : legalMove st m = false) :
+    applyCheckedMove? st m = none := by
+  unfold applyCheckedMove?
+  simp [checkMove_rejects_illegal h]
+
+theorem applyMove_place_rejects_illegal {st : GameState} {p : Pos}
+    (h : legalMove st (.place p) = false) :
+    applyMove? st (.place p) = none := by
+  unfold applyMove?
+  simp [h]
+
 theorem applyMove_place_requires_legal {st st' : GameState} {p : Pos}
     (h : applyMove? st (.place p) = some st') :
     legalMove st (.place p) = true := by

@@ -1,6 +1,6 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
- "outputs": "fa4a214d7a70374c.o",
+ "outputs": "e602fb2a516532dc.o",
  "log":
  [{"message":
    ".> c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2\\bin\\clang.exe -c -o D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Main.c.o.noexport D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Main.c -I c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2\\include -fstack-clash-protection -fdata-sections -ffunction-sections -Wno-unused-command-line-argument --sysroot c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2 -nostdinc -isystem c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2/include/clang -O3 -DNDEBUG",
@@ -8,11 +8,11 @@
  "inputs":
  [["Main:c",
    [["D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Main.c",
-     "1e22fee54a86fb23"],
+     "3298f1f3cd395273"],
     ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
      "2c8d2623007dfc36"]]],
   ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
    "2c8d2623007dfc36"],
   ["traceArgs: #[-O3, -DNDEBUG]", "6c7bb0eeabd8f74a"],
   ["x86_64-w64-windows-gnu", "360db333d006d911"]],
- "depHash": "72b5bf9aac676347"}
+ "depHash": "a1d509ffffe98b2f"}

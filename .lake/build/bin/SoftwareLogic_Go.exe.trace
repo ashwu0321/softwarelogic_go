@@ -1,6 +1,6 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
- "outputs": "0a20545ae1618886.exe",
+ "outputs": "94319de2befd6c54.exe",
  "log":
  [{"message":
    ".> c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2\\bin\\clang.exe -o D:\\school\\softwarelogic\\Go\\.lake\\build\\bin\\SoftwareLogic_Go.exe @D:\\school\\softwarelogic\\Go\\.lake\\build\\bin\\SoftwareLogic_Go.exe.rsp",
@@ -8,7 +8,7 @@
  "inputs":
  [["linkObjs",
    [["D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Main.c.o.noexport",
-     "fa4a214d7a70374c"],
+     "e602fb2a516532dc"],
     ["D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Basic.c.o.noexport",
      "536b00c18e3e50da"],
     ["D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Board.c.o.noexport",
@@ -31,4 +31,4 @@
   ["traceArgs: #[-Wl,--whole-archive, -lleanmanifest, -Wl,--no-whole-archive]",
    "d9dc93f51f923c09"],
   ["x86_64-w64-windows-gnu", "360db333d006d911"]],
- "depHash": "fa3940397ef24897"}
+ "depHash": "05e651f3a75e070c"}
