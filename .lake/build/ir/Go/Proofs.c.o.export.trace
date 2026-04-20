@@ -1,0 +1,18 @@
+{"synthetic": false,
+ "schemaVersion": "2025-09-10",
+ "outputs": "938e7d7c52754559.o",
+ "log":
+ [{"message":
+   ".> /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/bin/clang -c -o /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Proofs.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Proofs.c -I /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/include -fstack-clash-protection -fdata-sections -ffunction-sections -fvisibility=hidden -Wno-unused-command-line-argument --sysroot /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1 -nostdinc -isystem /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/include/clang -O3 -DNDEBUG -DLEAN_EXPORTING",
+   "level": "trace"}],
+ "inputs":
+ [["Go.Proofs:c",
+   [["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Proofs.c",
+     "a09b56972294bb56"],
+    ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
+     "fa77a35a41db35c0"]]],
+  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
+   "fa77a35a41db35c0"],
+  ["traceArgs: #[-O3, -DNDEBUG, -DLEAN_EXPORTING]", "c1efb66122fb2b9a"],
+  ["arm64-apple-darwin24.6.0", "77c16133d139df5a"]],
+ "depHash": "d57f0ce40ffd29d6"}

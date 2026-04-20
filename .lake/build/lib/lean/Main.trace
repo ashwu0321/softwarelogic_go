@@ -1,12 +1,12 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["26e660eac3506173.olean"],
-  "i": "78866c5fd9f66b67.ilean",
-  "c": "d459d5d38ba26603.c"},
+ {"o": ["950ad5e246c3afda.olean"],
+  "i": "f067c0e979c9a424.ilean",
+  "c": "7f8dcf10deb983bc.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Main.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Main.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Main.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Main.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Main.setup.json --json",
+   ".> LEAN_PATH=/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Main.lean -o /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Main.olean -i /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Main.ilean -c /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Main.c --setup /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Main.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["Main:deps",
@@ -23,11 +23,11 @@
       ["module plugins", "00000000000006bb"]]]]],
   ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
    "fa77a35a41db35c0"],
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Main.lean",
-   "a80ee0276c1bc5ee"],
+  ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Main.lean",
+   "3deb3dd7dcc1711e"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Main", "f2a1fd945cf30c62"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "d53ba9b4806d4ed4"}
+ "depHash": "577e649c3d6fb5c5"}

@@ -78,5 +78,5 @@ partial def runGoGame (state : GameState) : IO Unit := do
 def main : IO Unit := do
   IO.println "Welcome to Go!"
   IO.println helpText
-  let initialState := initialState 3  -- initialize board size
+  let initialState := initialState 5  -- 5x5 board
   runGoGame initialState
