@@ -5,7 +5,7 @@
  "isModule": false,
  "importArts":
  {"Go.Board":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Board.olean"],
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Board.olean"],
   "Go.Basic":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Basic.olean"]},
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Basic.olean"]},
  "dynlibs": []}

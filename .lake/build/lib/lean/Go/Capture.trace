@@ -1,12 +1,13 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["290f53006fbdb106.olean"],
+ {"o": ["fecded34fb08199d.olean"],
+  "m": false,
   "i": "ced4215082ee46dd.ilean",
-  "c": "29be7b7ac1592d9d.c"},
+  "c": "4ffbe2ee24bdfb83.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe D:\\school\\softwarelogic\\Go\\Go\\Capture.lean -o D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Capture.olean -i D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Capture.ilean -c D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Capture.c --setup D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Capture.setup.json --json",
+   ".> LEAN_PATH=D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2\\bin\\lean.exe D:\\school\\softwarelogic\\Go\\Go\\Capture.lean -o D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Capture.olean -i D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Capture.ilean -c D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Capture.c --setup D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Capture.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["Go.Capture:deps",
@@ -14,19 +15,19 @@
      [["SoftwareLogic_Go/Go:extraDep",
        [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
       ["imports",
-       [["Go.Liberty transitive imports (legacy)", "c96666b8785d0fed"],
-        ["Go.Liberty:importAllArts", "2f23d6a6dee1bb76"]]]]],
+       [["Go.Liberty transitive imports (legacy)", "ad09dc273c8ace76"],
+        ["Go.Liberty:importAllArts", "689030189de57813"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
       ["module dynlibs", "00000000000006bb"],
       ["module plugins", "00000000000006bb"]]]]],
-  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
-   "fa77a35a41db35c0"],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
   ["D:\\school\\softwarelogic\\Go\\Go\\Capture.lean", "e5ee966c84dfd4f6"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Go.Capture", "7115a78db3a16212"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "9ab3341c86f6fef3"}
+ "depHash": "bfb2d077f2c9dba6"}

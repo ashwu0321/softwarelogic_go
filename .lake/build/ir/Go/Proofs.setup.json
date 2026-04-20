@@ -5,17 +5,17 @@
  "isModule": false,
  "importArts":
  {"Go.Step":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Step.olean"],
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Step.olean"],
   "Go.Move":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Move.olean"],
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Move.olean"],
   "Go.Liberty":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Liberty.olean"],
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Liberty.olean"],
   "Go.Group":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Group.olean"],
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Group.olean"],
   "Go.Capture":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Capture.olean"],
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Capture.olean"],
   "Go.Board":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Board.olean"],
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Board.olean"],
   "Go.Basic":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Basic.olean"]},
+  ["D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Basic.olean"]},
  "dynlibs": []}

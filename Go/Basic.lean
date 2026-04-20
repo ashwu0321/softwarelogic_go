@@ -22,7 +22,7 @@ structure GameState where
   size  : Nat
   board : Board
   turn  : Stone
-  deriving Repr
+  deriving Repr, DecidableEq
 
 def emptyRow (n : Nat) : List (Option Stone) :=
   List.replicate n none

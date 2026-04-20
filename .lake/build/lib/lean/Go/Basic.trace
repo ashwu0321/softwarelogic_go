@@ -1,12 +1,13 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["f03375a9e0d9e0d9.olean"],
-  "i": "9c3afa23da5a8c54.ilean",
-  "c": "afe42f6b30535a34.c"},
+ {"o": ["0246c2c1940f1774.olean"],
+  "m": false,
+  "i": "ec15601fd878c6ca.ilean",
+  "c": "3902fc3573e5aa7e.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Basic.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Basic.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Basic.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Basic.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Basic.setup.json --json",
+   ".> LEAN_PATH=D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2\\bin\\lean.exe D:\\school\\softwarelogic\\Go\\Go\\Basic.lean -o D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Basic.olean -i D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Basic.ilean -c D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Basic.c --setup D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Basic.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["Go.Basic:deps",
@@ -19,13 +20,12 @@
       ["package external libraries", "00000000000006bb"],
       ["module dynlibs", "00000000000006bb"],
       ["module plugins", "00000000000006bb"]]]]],
-  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
-   "fa77a35a41db35c0"],
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Basic.lean",
-   "84ea793f012b0cc1"],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
+  ["D:\\school\\softwarelogic\\Go\\Go\\Basic.lean", "ca1f9a091228c55c"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Go.Basic", "27eefdf487e48caa"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "b1db777caaee8b0a"}
+ "depHash": "970b0437d3a726bc"}

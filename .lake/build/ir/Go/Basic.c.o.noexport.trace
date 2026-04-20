@@ -1,18 +1,18 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
- "outputs": "46a934605acab5ff.o",
+ "outputs": "536b00c18e3e50da.o",
  "log":
  [{"message":
-   ".> c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\clang.exe -c -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Basic.c.o.noexport C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Basic.c -I c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\include -fstack-clash-protection -fdata-sections -ffunction-sections -Wno-unused-command-line-argument --sysroot c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1 -nostdinc -isystem c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1/include/clang -O3 -DNDEBUG",
+   ".> c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2\\bin\\clang.exe -c -o D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Basic.c.o.noexport D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Basic.c -I c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2\\include -fstack-clash-protection -fdata-sections -ffunction-sections -Wno-unused-command-line-argument --sysroot c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2 -nostdinc -isystem c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2/include/clang -O3 -DNDEBUG",
    "level": "trace"}],
  "inputs":
  [["Go.Basic:c",
-   [["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Basic.c",
-     "afe42f6b30535a34"],
-    ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
-     "fa77a35a41db35c0"]]],
-  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
-   "fa77a35a41db35c0"],
+   [["D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Basic.c",
+     "3902fc3573e5aa7e"],
+    ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+     "2c8d2623007dfc36"]]],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
   ["traceArgs: #[-O3, -DNDEBUG]", "6c7bb0eeabd8f74a"],
   ["x86_64-w64-windows-gnu", "360db333d006d911"]],
- "depHash": "918d885dccac74f4"}
+ "depHash": "1950c4e59a8f1051"}

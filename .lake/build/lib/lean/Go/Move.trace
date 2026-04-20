@@ -1,12 +1,13 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["c3e84ec7b85ea2a8.olean"],
+ {"o": ["dcfcd0fa8adec664.olean"],
+  "m": false,
   "i": "d5d95326eb377caf.ilean",
-  "c": "7d01479c79c63b9a.c"},
+  "c": "7897f5921aa97a05.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Move.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Move.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Move.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Move.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Move.setup.json --json",
+   ".> LEAN_PATH=D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean c:\\Users\\ash\\.elan\\toolchains\\leanprover--lean4---v4.30.0-rc2\\bin\\lean.exe D:\\school\\softwarelogic\\Go\\Go\\Move.lean -o D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Move.olean -i D:\\school\\softwarelogic\\Go\\.lake\\build\\lib\\lean\\Go\\Move.ilean -c D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Move.c --setup D:\\school\\softwarelogic\\Go\\.lake\\build\\ir\\Go\\Move.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["Go.Move:deps",
@@ -14,20 +15,19 @@
      [["SoftwareLogic_Go/Go:extraDep",
        [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
       ["imports",
-       [["Go.Capture transitive imports (legacy)", "ba4a2eb49d102158"],
-        ["Go.Capture:importAllArts", "a80101bdbc12c27f"]]]]],
+       [["Go.Capture transitive imports (legacy)", "077c31753e5a21be"],
+        ["Go.Capture:importAllArts", "3685c03062d7e139"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
       ["module dynlibs", "00000000000006bb"],
       ["module plugins", "00000000000006bb"]]]]],
-  ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
-   "fa77a35a41db35c0"],
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Move.lean",
-   "3718e6f705dfb426"],
+  ["Lean 4.30.0, commit 3dc1a088b6d2d8eafe25a7cd7ec7b58d731bd7cc",
+   "2c8d2623007dfc36"],
+  ["D:\\school\\softwarelogic\\Go\\Go\\Move.lean", "3718e6f705dfb426"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Go.Move", "e49f5005e0be6b96"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "5981542bbd180c5f"}
+ "depHash": "099ec572999fc68d"}
