@@ -6,7 +6,7 @@
   "c": "fec67175c4604847.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Group.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Group.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Group.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Group.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Group.setup.json --json",
+   ".> LEAN_PATH=/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Go/Group.lean -o /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Group.olean -i /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Group.ilean -c /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Group.c --setup /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Group.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["Go.Group:deps",
@@ -14,7 +14,7 @@
      [["SoftwareLogic_Go/Go:extraDep",
        [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
       ["imports",
-       [["Go.Board transitive imports (legacy)", "997874e26fad8217"],
+       [["Go.Board transitive imports (legacy)", "c32f1b5f57ee6e6c"],
         ["Go.Board:importAllArts", "d279ce17b3fc536e"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
@@ -23,11 +23,11 @@
       ["module plugins", "00000000000006bb"]]]]],
   ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
    "fa77a35a41db35c0"],
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Group.lean",
+  ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Go/Group.lean",
    "1916815b40a77d75"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Go.Group", "ef95716c482b7151"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "be397466c9f525b5"}
+ "depHash": "c78f3e10832e7079"}

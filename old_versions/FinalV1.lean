@@ -342,11 +342,9 @@ theorem capture_demo_keeps_surrounding_white_stones :
 
 -- General theorem: any successful applyMove? on a placement leaves the group alive.
 -- This subsumes the concrete suicide theorems and covers all board positions.
-/-
 theorem center_move_group_has_liberties :
     groupHasLiberties? centerState (2, 2) = some true :=
   applyMove_place_group_has_liberties center_move_applies
--/
 
 -- General theorem: initial board is always n×n.
 theorem st0_board_length : st0.board.length = st0.size :=

@@ -6,7 +6,7 @@
   "c": "29be7b7ac1592d9d.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Capture.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Capture.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Capture.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Capture.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Capture.setup.json --json",
+   ".> LEAN_PATH=/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Go/Capture.lean -o /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Capture.olean -i /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Capture.ilean -c /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Capture.c --setup /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Capture.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["Go.Capture:deps",
@@ -14,7 +14,7 @@
      [["SoftwareLogic_Go/Go:extraDep",
        [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
       ["imports",
-       [["Go.Liberty transitive imports (legacy)", "c96666b8785d0fed"],
+       [["Go.Liberty transitive imports (legacy)", "d01f20aa65d15970"],
         ["Go.Liberty:importAllArts", "2f23d6a6dee1bb76"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
@@ -23,11 +23,11 @@
       ["module plugins", "00000000000006bb"]]]]],
   ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
    "fa77a35a41db35c0"],
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Capture.lean",
-   "d369d41f9072b3ef"],
+  ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Go/Capture.lean",
+   "e5ee966c84dfd4f6"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Go.Capture", "7115a78db3a16212"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "127e22a56879d438"}
+ "depHash": "179e9b84390eebd4"}

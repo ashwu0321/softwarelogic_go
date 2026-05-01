@@ -5,9 +5,9 @@
  "isModule": false,
  "importArts":
  {"Go.Group":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Group.olean"],
+  ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Group.olean"],
   "Go.Board":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Board.olean"],
+  ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Board.olean"],
   "Go.Basic":
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Basic.olean"]},
+  ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Basic.olean"]},
  "dynlibs": []}

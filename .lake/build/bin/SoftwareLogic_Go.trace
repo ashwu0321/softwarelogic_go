@@ -1,6 +1,6 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
- "outputs": "c17a3132dbde6396",
+ "outputs": "bc5c9918ce6a5a2d",
  "log":
  [{"message":
    ".> MACOSX_DEPLOYMENT_TARGET=99.0 /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/bin/clang -o /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/bin/SoftwareLogic_Go /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Main.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Basic.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Board.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Group.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Liberty.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Capture.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Move.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Step.c.o.export /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Proofs.c.o.export -L /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/lib/lean --sysroot /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1 -L /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/lib -L /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/lib/libc -fuse-ld=lld -lleancpp -lInit -lStd -lLean -lleanrt -lc++ -lLake -lgmp -luv -Wl,-dead_strip",
@@ -8,9 +8,9 @@
  "inputs":
  [["linkObjs",
    [["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Main.c.o.export",
-     "d00c026ee3dcb4d6"],
+     "0c2e0ecd92c0504b"],
     ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Basic.c.o.export",
-     "4933c347e4d3c5b2"],
+     "1149bbd054658946"],
     ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Board.c.o.export",
      "bbb33071420a7f4e"],
     ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Group.c.o.export",
@@ -22,12 +22,12 @@
     ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Move.c.o.export",
      "4a9cd4b4e2930c6c"],
     ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Step.c.o.export",
-     "5ba8bedde2b5135d"],
+     "6672ac22c037a96e"],
     ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Proofs.c.o.export",
-     "938e7d7c52754559"]]],
+     "dbadb05f665f787d"]]],
   ["linkLibs", "00000000000006bb"],
   ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
    "fa77a35a41db35c0"],
   ["traceArgs: #[]", "00000000000006bb"],
   ["arm64-apple-darwin24.6.0", "77c16133d139df5a"]],
- "depHash": "4ef4625da0e8a6dd"}
+ "depHash": "ab5e9ecd8fc8773e"}

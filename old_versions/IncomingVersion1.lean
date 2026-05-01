@@ -1,149 +1,6 @@
 import Go.Proofs
-import Std
 
 open Go
-
--- ============================================================
--- Input parsing and game loop
--- ============================================================
-
-inductive GoInputEvent where
-  | place (pos : Nat × Nat)
-  | pass
-  | quit
-deriving Repr, BEq
-
-def words (s : String) : List String :=
-  (s.trimAscii.toString.splitOn " ").filter (fun t => t ≠ "")
-
-def parseGoCommand (line : String) : Except String GoInputEvent :=
-  match words line with
-  | [] => .error "Empty command. Type a position like '2 3' or 'pass' or 'quit'."
-  | "pass" :: [] => .ok .pass
-  | "quit" :: [] => .ok .quit
-  | x :: y :: [] =>
-      match x.toNat?, y.toNat? with
-      | some px, some py => .ok (.place (px, py))
-      | _, _ => .error "Invalid coordinates. Use numbers like '2 3'."
-  | _ => .error "Usage: <x> <y> to place a stone, 'pass' to pass, or 'quit' to quit."
-
-def handleGoEvent (state : GameState) : GoInputEvent → Option GameState
-  | .place pos => applyMove? state (Move.place pos)
-  | .pass => applyMove? state Move.pass
-  | .quit => none
-
-def displayGameState (state : GameState) : String :=
-  let boardStr := boardToString state.board
-  let turnStr := reprStr state.turn
-  s!"Current turn: {turnStr}\n{boardStr}"
-
-def helpText : String :=
-  String.intercalate "\n"
-    [ "Go Game Commands:"
-    , "  <x> <y>  - Place a stone at position (x, y)"
-    , "  pass     - Pass your turn"
-    , "  quit     - Exit the game"
-    , ""
-    , "Example: '2 3' places a stone at position (2, 3)"
-    ]
-
-def countStonesOnBoard (b : Board) (s : Stone) : Nat :=
-  b.foldl (fun acc row => acc + row.foldl (fun a cell =>
-    match cell with | some st => if st == s then a + 1 else a | none => a) 0) 0
-
-def allPositions (size : Nat) : List Pos :=
-  (List.range size).foldl (fun acc r =>
-    acc ++ (List.range size).map (fun c => (r, c))) []
-
-partial def collectRegion (size : Nat) (b : Board)
-    (frontier : List Pos) (visited : List Pos)
-    (touchesBlack : Bool) (touchesWhite : Bool) :
-    List Pos × Bool × Bool :=
-  match frontier with
-  | [] => (visited, touchesBlack, touchesWhite)
-  | p :: rest =>
-    if visited.contains p then
-      collectRegion size b rest visited touchesBlack touchesWhite
-    else
-      match boardGet? b p with
-      | some none =>
-        collectRegion size b (neighbors size p ++ rest) (p :: visited) touchesBlack touchesWhite
-      | some (some Stone.black) =>
-        collectRegion size b rest visited true touchesWhite
-      | some (some Stone.white) =>
-        collectRegion size b rest visited touchesBlack true
-      | none =>
-        collectRegion size b rest visited touchesBlack touchesWhite
-
-def scoreBoard (b : Board) (size : Nat) : Nat × Nat :=
-  let blackStones := countStonesOnBoard b Stone.black
-  let whiteStones := countStonesOnBoard b Stone.white
-  let (blackTerritory, whiteTerritory, _) :=
-    (allPositions size).foldl (fun (bT, wT, visited) p =>
-      if visited.contains p || !isEmptyAt b p then (bT, wT, visited)
-      else
-        let (region, touchesBlack, touchesWhite) := collectRegion size b [p] [] false false
-        let newVisited := visited ++ region
-        if touchesBlack && !touchesWhite then (bT + region.length, wT, newVisited)
-        else if touchesWhite && !touchesBlack then (bT, wT + region.length, newVisited)
-        else (bT, wT, newVisited)
-    ) (0, 0, [])
-  (blackStones + blackTerritory, whiteStones + whiteTerritory)
-
-def announceWinner (state : GameState) : IO Unit := do
-  let (blackScore, whiteScore) := scoreBoard state.board state.size
-  IO.println ""
-  IO.println "Final board:"
-  IO.println (boardToString state.board)
-  IO.println ""
-  IO.println s!"Score — Black: {blackScore}  White: {whiteScore}"
-  if blackScore > whiteScore then
-    IO.println "Black wins!"
-  else if whiteScore > blackScore then
-    IO.println "White wins!"
-  else
-    IO.println "It's a tie!"
-
-partial def runGoGame (state : GameState) (passCount : Nat) : IO Unit := do
-  IO.println ""
-  IO.println (displayGameState state)
-  IO.println ""
-  IO.print "> "
-
-  let stdin ← IO.getStdin
-  let line ← stdin.getLine
-  let line := (line.dropEndWhile Char.isWhitespace).toString
-
-  match parseGoCommand line with
-  | .error msg =>
-      IO.println msg
-      runGoGame state passCount
-  | .ok .quit =>
-      IO.println "Thanks for playing Go!"
-  | .ok .pass =>
-      let newPassCount := passCount + 1
-      if newPassCount >= 2 then
-        IO.println "Both players passed. Game over!"
-        announceWinner state
-      else
-        match handleGoEvent state .pass with
-        | none =>
-            IO.println "Invalid move! Try again."
-            runGoGame state passCount
-        | some newState =>
-            IO.println "Pass."
-            runGoGame newState newPassCount
-  | .ok event =>
-      match handleGoEvent state event with
-      | none =>
-          IO.println "Invalid move! Try again."
-          runGoGame state passCount
-      | some newState =>
-          runGoGame newState 0
-
--- ============================================================
--- Demo helpers
--- ============================================================
 
 def showState (label : String) (st : GameState) : IO Unit := do
   IO.println s!"{label}"
@@ -197,10 +54,6 @@ def showSequence (label : String) (st : GameState) (ms : List Move) : IO Unit :=
       IO.println (boardToString st'.board)
       IO.println s!"turn = {reprStr st'.turn}"
   IO.println ""
-
--- ============================================================
--- Demo state and theorems
--- ============================================================
 
 def st0 : GameState :=
   initialState 5
@@ -340,18 +193,6 @@ theorem capture_demo_keeps_surrounding_white_stones :
         stoneAt? st.board (1, 2) == some Stone.white) = true := by
   native_decide
 
--- General theorem: any successful applyMove? on a placement leaves the group alive.
--- This subsumes the concrete suicide theorems and covers all board positions.
-/-
-theorem center_move_group_has_liberties :
-    groupHasLiberties? centerState (2, 2) = some true :=
-  applyMove_place_group_has_liberties center_move_applies
--/
-
--- General theorem: initial board is always n×n.
-theorem st0_board_length : st0.board.length = st0.size :=
-  initialState_board_length 5
-
 def proofCertificates : List String :=
   [ "center_move_is_legal uses legalMove on a concrete move"
   , "checked_center_move_exists constructs a LegalMove proof object from a runtime-style check"
@@ -371,12 +212,6 @@ def proofCertificates : List String :=
   , "raw_suicide_move_rejected proves the raw executor rejects that illegal placement"
   , "capture_demo_removes_surrounded_stone checks the captured point is empty afterward"
   , "capture_demo_keeps_surrounding_white_stones checks the surrounding stones remain"
-  , "legal_place_no_suicide (Proofs.lean) proves FOR ANY board: legal placements always leave the group alive"
-  , "applyMove_place_group_has_liberties (Proofs.lean) proves applyMove? never silently accepts a suicidal move"
-  , "initialState_board_length (Proofs.lean) proves the initial board always has exactly n rows"
-  , "initialState_row_length (Proofs.lean) proves every row in the initial board has exactly n cells"
-  , "center_move_group_has_liberties instantiates the general theorem for the center move"
-  , "st0_board_length instantiates the well-formedness theorem for the 5x5 starting board"
   ]
 
 def showProofCertificates : IO Unit := do
@@ -384,6 +219,7 @@ def showProofCertificates : IO Unit := do
   for cert in proofCertificates do
     IO.println s!"- {cert}"
   IO.println ""
+
 
 def occupiedTest? : Option GameState := do
   let st1 ← oneMove?
@@ -395,12 +231,20 @@ def passState? : Option GameState :=
 def finalState? : Option GameState :=
   applyCheckedMoves? st0 demoMoves
 
+/-
+  Capture demo:
+  Black at (1,1), then White surrounds it on all four sides.
+  Final White move at (1,2) should capture the black stone at (1,1).
+-/
 def captureMoves : List Move :=
   captureDemoMoves
 
 def captureState? : Option GameState :=
   applyCheckedMoves? st0 captureMoves
 
+/-
+  Simple multi-step mixed demo with pass included.
+-/
 def mixedMoves : List Move :=
   [ Move.place (0, 0)
   , Move.place (0, 1)
@@ -412,11 +256,7 @@ def mixedMoves : List Move :=
 def mixedState? : Option GameState :=
   applyCheckedMoves? st0 mixedMoves
 
--- ============================================================
--- Demo runner (from IncomingVersion1.lean)
--- ============================================================
-
-def runDemo : IO Unit := do
+def main : IO Unit := do
   IO.println "=== FORMALLY VERIFIED MINI-GO DEMO ==="
   IO.println ""
 
@@ -487,32 +327,3 @@ def runDemo : IO Unit := do
   IO.println "- captures are resolved during placement"
   IO.println ""
   IO.println "=== END DEMO ==="
-
--- ============================================================
--- Entry point
--- ============================================================
-
-def promptBoardSize : IO Nat := do
-  IO.println "Enter board size (2-19, default 9):"
-  IO.print "> "
-  let stdin ← IO.getStdin
-  let line ← stdin.getLine
-  let line := (line.dropEndWhile Char.isWhitespace).toString
-  match line.toNat? with
-  | some n =>
-    if n >= 2 && n <= 19 then return n
-    else IO.println "Size must be between 2 and 19. Using 9."; return 9
-  | none =>
-    if line == "" then return 9
-    else IO.println "Invalid input. Using 9."; return 9
-
-def main (args : List String) : IO Unit := do
-  if args.contains "--demo" then
-    runDemo
-  else
-    IO.println "Welcome to Go!"
-    IO.println helpText
-    IO.println "(Tip: run with --demo to see the formally verified demo instead.)"
-    let size ← promptBoardSize
-    let gs := initialState size
-    runGoGame gs 0

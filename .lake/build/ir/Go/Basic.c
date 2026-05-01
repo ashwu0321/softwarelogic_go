@@ -204,6 +204,20 @@ LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_List_repr___at___00List_repr___at_
 static const lean_closure_object lp_SoftwareLogic__Go_Go_instReprGameState___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_SoftwareLogic__Go_Go_instReprGameState_repr___boxed, .m_arity = 2, .m_num_fixed = 0, .m_objs = {} };
 static const lean_object* lp_SoftwareLogic__Go_Go_instReprGameState___closed__0 = (const lean_object*)&lp_SoftwareLogic__Go_Go_instReprGameState___closed__0_value;
 LEAN_EXPORT const lean_object* lp_SoftwareLogic__Go_Go_instReprGameState = (const lean_object*)&lp_SoftwareLogic__Go_Go_instReprGameState___closed__0_value;
+uint8_t l_Option_instDecidableEq___redArg(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT uint8_t lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__0(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__0___boxed(lean_object*, lean_object*);
+uint8_t l_instDecidableEqList___redArg(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT uint8_t lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__1(lean_object*, lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__1___boxed(lean_object*, lean_object*, lean_object*);
+static const lean_closure_object lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___closed__0_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*0, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__0___boxed, .m_arity = 2, .m_num_fixed = 0, .m_objs = {} };
+static const lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___closed__0 = (const lean_object*)&lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___closed__0_value;
+static const lean_closure_object lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___closed__1_value = {.m_header = {.m_rc = 0, .m_cs_sz = sizeof(lean_closure_object) + sizeof(void*)*1, .m_other = 0, .m_tag = 245}, .m_fun = (void*)lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__1___boxed, .m_arity = 3, .m_num_fixed = 1, .m_objs = {((lean_object*)&lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___closed__0_value)} };
+static const lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___closed__1 = (const lean_object*)&lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___closed__1_value;
+LEAN_EXPORT uint8_t lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___boxed(lean_object*, lean_object*);
+LEAN_EXPORT uint8_t lp_SoftwareLogic__Go_Go_instDecidableEqGameState(lean_object*, lean_object*);
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState___boxed(lean_object*, lean_object*);
 lean_object* l_List_replicateTR___redArg(lean_object*, lean_object*);
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_emptyRow(lean_object*);
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_emptyBoard(lean_object*);
@@ -1609,6 +1623,110 @@ lean_object* x_3;
 x_3 = lp_SoftwareLogic__Go_List_repr___at___00List_repr___at___00Go_instReprGameState_repr_spec__0_spec__0(x_1, x_2);
 lean_dec(x_2);
 return x_3;
+}
+}
+LEAN_EXPORT uint8_t lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__0(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; uint8_t x_4; 
+x_3 = lean_alloc_closure((void*)(lp_SoftwareLogic__Go_Go_instDecidableEqStone___boxed), 2, 0);
+x_4 = l_Option_instDecidableEq___redArg(x_3, x_1, x_2);
+return x_4;
+}
+}
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__0___boxed(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+uint8_t x_3; lean_object* x_4; 
+x_3 = lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__0(x_1, x_2);
+x_4 = lean_box(x_3);
+return x_4;
+}
+}
+LEAN_EXPORT uint8_t lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__1(lean_object* x_1, lean_object* x_2, lean_object* x_3) {
+_start:
+{
+uint8_t x_4; 
+x_4 = l_instDecidableEqList___redArg(x_1, x_2, x_3);
+return x_4;
+}
+}
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__1___boxed(lean_object* x_1, lean_object* x_2, lean_object* x_3) {
+_start:
+{
+uint8_t x_4; lean_object* x_5; 
+x_4 = lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___lam__1(x_1, x_2, x_3);
+x_5 = lean_box(x_4);
+return x_5;
+}
+}
+LEAN_EXPORT uint8_t lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+lean_object* x_3; lean_object* x_4; uint8_t x_5; lean_object* x_6; lean_object* x_7; uint8_t x_8; uint8_t x_9; 
+x_3 = lean_ctor_get(x_1, 0);
+lean_inc(x_3);
+x_4 = lean_ctor_get(x_1, 1);
+lean_inc(x_4);
+x_5 = lean_ctor_get_uint8(x_1, sizeof(void*)*2);
+lean_dec_ref(x_1);
+x_6 = lean_ctor_get(x_2, 0);
+lean_inc(x_6);
+x_7 = lean_ctor_get(x_2, 1);
+lean_inc(x_7);
+x_8 = lean_ctor_get_uint8(x_2, sizeof(void*)*2);
+lean_dec_ref(x_2);
+x_9 = lean_nat_dec_eq(x_3, x_6);
+lean_dec(x_6);
+lean_dec(x_3);
+if (x_9 == 0)
+{
+lean_dec(x_7);
+lean_dec(x_4);
+return x_9;
+}
+else
+{
+lean_object* x_10; uint8_t x_11; 
+x_10 = ((lean_object*)(lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___closed__1));
+x_11 = l_instDecidableEqList___redArg(x_10, x_4, x_7);
+if (x_11 == 0)
+{
+return x_11;
+}
+else
+{
+uint8_t x_12; 
+x_12 = lp_SoftwareLogic__Go_Go_instDecidableEqStone(x_5, x_8);
+return x_12;
+}
+}
+}
+}
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq___boxed(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+uint8_t x_3; lean_object* x_4; 
+x_3 = lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq(x_1, x_2);
+x_4 = lean_box(x_3);
+return x_4;
+}
+}
+LEAN_EXPORT uint8_t lp_SoftwareLogic__Go_Go_instDecidableEqGameState(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+uint8_t x_3; 
+x_3 = lp_SoftwareLogic__Go_Go_instDecidableEqGameState_decEq(x_1, x_2);
+return x_3;
+}
+}
+LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_instDecidableEqGameState___boxed(lean_object* x_1, lean_object* x_2) {
+_start:
+{
+uint8_t x_3; lean_object* x_4; 
+x_3 = lp_SoftwareLogic__Go_Go_instDecidableEqGameState(x_1, x_2);
+x_4 = lean_box(x_3);
+return x_4;
 }
 }
 LEAN_EXPORT lean_object* lp_SoftwareLogic__Go_Go_emptyRow(lean_object* x_1) {

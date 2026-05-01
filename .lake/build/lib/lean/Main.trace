@@ -1,9 +1,9 @@
 {"synthetic": false,
  "schemaVersion": "2025-09-10",
  "outputs":
- {"o": ["950ad5e246c3afda.olean"],
-  "i": "f067c0e979c9a424.ilean",
-  "c": "7f8dcf10deb983bc.c"},
+ {"o": ["1d459115bdec96d3.olean"],
+  "i": "bbfd384fec0ca875.ilean",
+  "c": "9cc2dde6cdaa18e1.c"},
  "log":
  [{"message":
    ".> LEAN_PATH=/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Main.lean -o /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Main.olean -i /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Main.ilean -c /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Main.c --setup /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Main.setup.json --json",
@@ -14,8 +14,8 @@
      [["SoftwareLogic_Go/SoftwareLogic_Go:extraDep",
        [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
       ["imports",
-       [["Go.Proofs transitive imports (legacy)", "df1ef23313da1406"],
-        ["Go.Proofs:importAllArts", "748a43e047c26078"]]]]],
+       [["Go.Proofs transitive imports (legacy)", "fabeb08696b45dbf"],
+        ["Go.Proofs:importAllArts", "e1baa7828b1e3844"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
       ["package external libraries", "00000000000006bb"],
@@ -24,10 +24,10 @@
   ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
    "fa77a35a41db35c0"],
   ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Main.lean",
-   "3deb3dd7dcc1711e"],
+   "632c14d984c40608"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Main", "f2a1fd945cf30c62"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "577e649c3d6fb5c5"}
+ "depHash": "ab6612b2c0551e37"}

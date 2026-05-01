@@ -6,7 +6,7 @@
   "c": "7d01479c79c63b9a.c"},
  "log":
  [{"message":
-   ".> LEAN_PATH=C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean c:\\Users\\bcu6cy\\.elan\\toolchains\\leanprover--lean4---v4.29.1\\bin\\lean.exe C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Move.lean -o C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Move.olean -i C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\lib\\lean\\Go\\Move.ilean -c C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Move.c --setup C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\.lake\\build\\ir\\Go\\Move.setup.json --json",
+   ".> LEAN_PATH=/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean /Users/ChiChi/.elan/toolchains/leanprover--lean4---v4.29.1/bin/lean /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Go/Move.lean -o /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Move.olean -i /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/lib/lean/Go/Move.ilean -c /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Move.c --setup /Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/.lake/build/ir/Go/Move.setup.json --json",
    "level": "trace"}],
  "inputs":
  [["Go.Move:deps",
@@ -14,7 +14,7 @@
      [["SoftwareLogic_Go/Go:extraDep",
        [["@SoftwareLogic_Go:extraDep", "00000000000006bb"]]],
       ["imports",
-       [["Go.Capture transitive imports (legacy)", "ba4a2eb49d102158"],
+       [["Go.Capture transitive imports (legacy)", "25591a158caffd80"],
         ["Go.Capture:importAllArts", "a80101bdbc12c27f"]]]]],
     ["libs",
      [["import dynlibs", "00000000000006bb"],
@@ -23,11 +23,11 @@
       ["module plugins", "00000000000006bb"]]]]],
   ["Lean 4.29.1, commit f72c35b3f637c8c6571d353742168ab66cc22c00",
    "fa77a35a41db35c0"],
-  ["C:\\Users\\bcu6cy\\Downloads\\lean\\softwarelogic_go\\Go\\Move.lean",
+  ["/Users/ChiChi/Documents/Documents - MacBook Air (8)/CS 6501 - Software Logic/go_project/softwarelogic_go/Go/Move.lean",
    "3718e6f705dfb426"],
   ["options", "00000000000006bb"],
   ["isModule: false", "feefd2a0d3a1847e"],
   ["Module.name: Go.Move", "e49f5005e0be6b96"],
   ["Package.id?: (some SoftwareLogic_Go)", "cbcc816976ab0c9e"],
   ["Module.leanArgs: #[]", "00000000000006bb"]],
- "depHash": "5981542bbd180c5f"}
+ "depHash": "3b7ba4d9328e2749"}
