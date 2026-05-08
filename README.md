@@ -18,6 +18,12 @@ The build checks both the executable and the Lean theorems.
 lake exe SoftwareLogic_Go
 ```
 
+To execute the demo:
+```powershell
+lake exe SoftwareLogic_Go --demo
+```
+
+
 The executable prints a short demonstration of legal moves, rejected moves,
 passes, capture resolution, suicide prevention, and proof-backed invariants.
 
